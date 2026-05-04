@@ -1,0 +1,20 @@
+unnamed_0,unnamed_1,unnamed_2,unnamed_3,unnamed_4,unnamed_5,unnamed_6,unnamed_7,unnamed_8,unnamed_9,unnamed_10,unnamed_11
+Data Item Description,,,Series Type,Series ID,Series Start,Series End,No. Obs.,Unit,Data Type,Freq.,Collection Month
+Total number of dwelling units ;  New South Wales ;  Houses ;  Private Sector ;,,,Original,A418458A,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Houses ;  Private Sector ;,,,Original,A418458A,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Houses ;  Total Sectors ;,,,Original,A418511A,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Dwellings excluding houses ;  Private Sector ;,,,Original,A421293X,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Dwellings excluding houses ;  Total Sectors ;,,,Original,A421353R,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Total (Type of Building) ;  Private Sector ;,,,Original,A422102R,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Total (Type of Building) ;  Total Sectors ;,,,Original,A422166A,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Houses ;  Private Sector ;,,,Seasonally Adjusted,A418461R,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Houses ;  Total Sectors ;,,,Seasonally Adjusted,A418514J,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Total (Type of Building) ;  Private Sector ;,,,Seasonally Adjusted,A422108C,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Total (Type of Building) ;  Total Sectors ;,,,Seasonally Adjusted,A422172W,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Houses ;  Private Sector ;,,,Trend,A418462T,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Houses ;  Total Sectors ;,,,Trend,A418515K,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Dwellings excluding houses ;  Private Sector ;,,,Trend,A421299L,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Dwellings excluding houses ;  Total Sectors ;,,,Trend,A421359C,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Total (Type of Building) ;  Private Sector ;,,,Trend,A422109F,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+Total number of dwelling units ;  New South Wales ;  Total (Type of Building) ;  Total Sectors ;,,,Trend,A422174A,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
+© Commonwealth of Australia  2026,,,Original,A418458A,1983-07-01 00:00:00,2026-03-01 00:00:00,513,Number,FLOW,Month,1
