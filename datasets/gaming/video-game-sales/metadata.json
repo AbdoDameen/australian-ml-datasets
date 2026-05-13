@@ -80,5 +80,19 @@
     "README.md": "Dataset documentation",
     "DATA_PREPARATION_PROCESS.md": "Full process documentation",
     "prepare_dataset.py": "Reproducible preparation script"
-  }
+  },
+  "features_for_ml_v2": 41,
+  "expanded_features": [
+    "games_in_year",
+    "games_in_year_genre",
+    "games_in_year_platform",
+    "genre_market_share",
+    "is_top10_pct_year",
+    "platform_age",
+    "platform_lifecycle",
+    "publisher_market_share",
+    "sales_percentile_year",
+    "sales_percentile_year_genre"
+  ],
+  "updated_date": "2026-05-13 14:15:15.796085"
 }
