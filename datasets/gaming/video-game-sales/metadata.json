@@ -1,8 +1,8 @@
 {
   "dataset_name": "video-game-sales",
   "title": "Video Game Sales \u2014 Global Sales Data (16,598 Games)",
-  "source": "vgsales public dataset",
-  "source_url": "",
+  "source": "vgsales public dataset (Figshare)",
+  "source_url": "https://doi.org/10.6084/m9.figshare.31939302",
   "license": "Public domain data",
   "created_date": "2026-05-13 14:13:40.603955",
   "description": "Global video game sales data covering 16,598 titles across platforms, genres, and publishers. Includes sales in millions by region (NA, EU, JP, Other) and globally.",

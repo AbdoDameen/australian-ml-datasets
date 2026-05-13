@@ -4,7 +4,8 @@
 Global sales data for **16,593 video games** spanning 1980-2020 across 31 platforms, 12 genres, and 578 publishers. Includes regional sales breakdowns (NA, EU, JP, Other) and engineered features for ML.
 
 ## Source
-- **Dataset**: vgsales public dataset
+- **Source**: vgsales public dataset (Figshare)
+- **DOI**: https://doi.org/10.6084/m9.figshare.31939302
 - **License**: Public domain data
 
 ## Dataset Contents
