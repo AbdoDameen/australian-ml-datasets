@@ -26,18 +26,15 @@ Every dataset here has been pulled from its source, cleaned up, feature-engineer
 
 **Who this is for:**
 
-- **Data scientists** who need real-world Australian data without the cleanup overhead
-- **ML students** looking for meaningful datasets to practise on — regression, classification, time-series, geospatial — it's all here
-- **Researchers** working on Australian-specific problems who don't want to spend a week just getting the data into shape
-- **Anyone** who's ever opened a government CSV and immediately closed it again
+Data scientists who need real-world Australian data without the cleanup overhead. ML students looking for meaningful datasets to practise on — regression, classification, time-series, geospatial — it's all here. Researchers working on Australian-specific problems who don't want to spend a week just getting the data into shape. Or really anyone who's ever opened a government CSV and immediately closed it again.
 
-Each dataset comes with a `prepare_dataset.py` script so you can see exactly what was done and modify it if needed. No black boxes, no secrets.
+Each dataset comes with a `prepare_dataset.py` script so you can see exactly what was done and modify it if needed. No black boxes.
 
 ---
 
 ## Datasets
 
-Browse the datasets/ folder — each one lives under a domain directory:
+Browse the `datasets/` folder — each dataset lives under a domain directory. Eleven of them across eight domains: climate data, mining tenements, power plant emissions, car prices, aircraft registrations, housing approvals, child mortality, socioeconomic indexes, and video game sales. If it's Australian and vaguely useful for ML, it's probably in here.
 
 ```
 datasets/
@@ -58,7 +55,7 @@ Eleven datasets across eight domains, from climate variables to mining tenements
 
 ## What each dataset gives you
 
-Every dataset follows the same structure. Open any one and you'll find:
+Every dataset follows the same layout:
 
 ```
 raw/                        # The original file, untouched
@@ -70,7 +67,7 @@ DATA_PREPARATION_PROCESS.md # Every step documented
 metadata.json               # Machine-readable metadata
 ```
 
-The `prepare_dataset.py` scripts are the real value. Run one and it'll load the raw data, clean it, create features, split into train/test, apply StandardScaler, and save everything to the right folders. Zero manual steps.
+The `prepare_dataset.py` scripts handle the whole pipeline — loading, cleaning, feature engineering, splitting, and scaling. Run one and it rebuilds everything from scratch.
 
 ---
 
