@@ -44,3 +44,4 @@ wheels/
 datasets/*/raw/
 datasets/*/processed/
 !datasets/*/.gitkeep
+kaggle.json
