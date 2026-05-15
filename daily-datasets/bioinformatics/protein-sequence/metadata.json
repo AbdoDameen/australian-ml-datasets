@@ -1,0 +1,12 @@
+{
+  "dataset_id": 57,
+  "name": "Protein Sequence (Bioinfo)",
+  "folder": "bioinformatics/protein-sequence",
+  "domain": "Bioinformatics",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "15K+ protein sequences",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

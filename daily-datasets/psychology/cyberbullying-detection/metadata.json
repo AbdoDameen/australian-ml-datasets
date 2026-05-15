@@ -1,0 +1,12 @@
+{
+  "dataset_id": 16,
+  "name": "Cyberbullying Detection",
+  "folder": "psychology/cyberbullying-detection",
+  "domain": "Psychology",
+  "ml_task": "NLP",
+  "source": "Kaggle",
+  "description": "47K tweets, cyberbullying types",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

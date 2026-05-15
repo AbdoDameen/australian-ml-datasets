@@ -1,0 +1,12 @@
+{
+  "dataset_id": 25,
+  "name": "Chest X-Ray (Pneumonia)",
+  "folder": "radiology/chest-xray",
+  "domain": "Radiology",
+  "ml_task": "Image Classification",
+  "source": "Kaggle",
+  "description": "5,863 X-ray images",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

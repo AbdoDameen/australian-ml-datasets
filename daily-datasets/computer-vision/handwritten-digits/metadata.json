@@ -1,0 +1,12 @@
+{
+  "dataset_id": 10,
+  "name": "Handwritten Digits",
+  "folder": "computer-vision/handwritten-digits",
+  "domain": "Computer-Vision",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "7,400 digits, 64 features",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

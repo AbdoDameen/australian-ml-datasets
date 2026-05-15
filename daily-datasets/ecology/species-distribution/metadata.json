@@ -1,0 +1,12 @@
+{
+  "dataset_id": 27,
+  "name": "Species Distribution (GBIF)",
+  "folder": "ecology/species-distribution",
+  "domain": "Ecology",
+  "ml_task": "Classification",
+  "source": "GBIF",
+  "description": "1M+ species occurrence records",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

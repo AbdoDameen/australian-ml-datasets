@@ -1,0 +1,12 @@
+{
+  "dataset_id": 22,
+  "name": "DNA Methylation (Breast Cancer)",
+  "folder": "epigenetics/dna-methylation",
+  "domain": "Epigenetics",
+  "ml_task": "Classification",
+  "source": "NCBI GEO",
+  "description": "485K CpG sites, 96 samples",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_id": 41,
+  "name": "Wine Quality (Vinho Verde)",
+  "folder": "oenology/wine-quality",
+  "domain": "Oenology",
+  "ml_task": "Regression",
+  "source": "UCI",
+  "description": "4,898 wines, quality score",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

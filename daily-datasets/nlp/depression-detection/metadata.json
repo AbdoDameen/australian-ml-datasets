@@ -1,0 +1,12 @@
+{
+  "dataset_id": 60,
+  "name": "Depression Detection (NLP)",
+  "folder": "nlp/depression-detection",
+  "domain": "Nlp",
+  "ml_task": "NLP",
+  "source": "Kaggle",
+  "description": "40K+ social media posts",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

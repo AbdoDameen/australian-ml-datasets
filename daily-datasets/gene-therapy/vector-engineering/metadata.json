@@ -1,0 +1,12 @@
+{
+  "dataset_id": 30,
+  "name": "Gene Therapy Vectors",
+  "folder": "gene-therapy/vector-engineering",
+  "domain": "Gene-Therapy",
+  "ml_task": "Regression",
+  "source": "AddGene",
+  "description": "5,000+ genetic constructs",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

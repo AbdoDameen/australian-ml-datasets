@@ -1,0 +1,12 @@
+{
+  "dataset_id": 31,
+  "name": "Forest Fires (Portugal)",
+  "folder": "forestry/forest-fires",
+  "domain": "Forestry",
+  "ml_task": "Regression",
+  "source": "UCI",
+  "description": "517 fire records, burned area",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

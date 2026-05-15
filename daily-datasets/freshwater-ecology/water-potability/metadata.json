@@ -1,0 +1,12 @@
+{
+  "dataset_id": 35,
+  "name": "Water Potability",
+  "folder": "freshwater-ecology/water-potability",
+  "domain": "Freshwater-Ecology",
+  "ml_task": "Classification",
+  "source": "Kaggle",
+  "description": "3,276 water samples, quality",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

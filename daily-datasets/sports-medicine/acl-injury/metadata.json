@@ -1,0 +1,12 @@
+{
+  "dataset_id": 36,
+  "name": "Fitbit Athlete Activity",
+  "folder": "sports-medicine/acl-injury",
+  "domain": "Sports-Medicine",
+  "ml_task": "Regression",
+  "source": "Kaggle",
+  "description": "33K Fitbit records",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

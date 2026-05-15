@@ -1,0 +1,12 @@
+{
+  "dataset_id": 7,
+  "name": "Dengue Prediction",
+  "folder": "infectious-diseases/dengue-prediction",
+  "domain": "Infectious-Diseases",
+  "ml_task": "Regression",
+  "source": "DrivenData",
+  "description": "1,456 weekly dengue cases",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

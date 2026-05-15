@@ -1,0 +1,12 @@
+{
+  "dataset_id": 14,
+  "name": "Forest Cover Type",
+  "folder": "ecology/forest-cover-type",
+  "domain": "Ecology",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "581K forest cells, 7 cover types",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

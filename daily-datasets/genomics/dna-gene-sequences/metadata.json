@@ -1,0 +1,12 @@
+{
+  "dataset_id": 20,
+  "name": "DNA Gene Sequences",
+  "folder": "genomics/dna-gene-sequences",
+  "domain": "Genomics",
+  "ml_task": "Classification",
+  "source": "Kaggle",
+  "description": "10K+ gene sequences",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

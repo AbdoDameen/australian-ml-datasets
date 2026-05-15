@@ -1,0 +1,12 @@
+{
+  "dataset_id": 18,
+  "name": "Australian Visitor Arrivals",
+  "folder": "tourism/australian-visitor-arrivals",
+  "domain": "Tourism",
+  "ml_task": "Forecasting",
+  "source": "data.gov.au",
+  "description": "10K+ monthly visitor records",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

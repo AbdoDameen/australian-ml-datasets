@@ -1,0 +1,12 @@
+{
+  "dataset_id": 3,
+  "name": "Earth Surface Temperature",
+  "folder": "climate/earth-surface-temperature",
+  "domain": "Climate",
+  "ml_task": "Time Series",
+  "source": "Kaggle",
+  "description": "8.5M global temp records",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

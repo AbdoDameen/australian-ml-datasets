@@ -1,0 +1,12 @@
+{
+  "dataset_id": 46,
+  "name": "NHANES Health Survey",
+  "folder": "public-health/nhanes-health",
+  "domain": "Public-Health",
+  "ml_task": "Regression",
+  "source": "CDC",
+  "description": "50K+ participants, 500+ features",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

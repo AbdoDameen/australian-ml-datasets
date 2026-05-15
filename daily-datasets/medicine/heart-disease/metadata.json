@@ -1,0 +1,12 @@
+{
+  "dataset_id": 1,
+  "name": "Heart Disease",
+  "folder": "medicine/heart-disease",
+  "domain": "Medicine",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "303 patients, heart disease diagnosis",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_id": 34,
+  "name": "Uterine Cancer Radiogenomics",
+  "folder": "oncology/uterine-cancer",
+  "domain": "Oncology",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "350 patients, radiomic features",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

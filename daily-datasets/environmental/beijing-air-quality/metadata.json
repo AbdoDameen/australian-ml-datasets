@@ -1,0 +1,12 @@
+{
+  "dataset_id": 21,
+  "name": "Beijing Air Quality",
+  "folder": "environmental/beijing-air-quality",
+  "domain": "Environmental",
+  "ml_task": "Regression",
+  "source": "UCI",
+  "description": "43,824 hourly PM2.5 readings",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

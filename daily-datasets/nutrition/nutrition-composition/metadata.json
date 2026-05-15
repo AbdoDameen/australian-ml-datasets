@@ -1,0 +1,12 @@
+{
+  "dataset_id": 24,
+  "name": "Food Nutrition (USDA)",
+  "folder": "nutrition/nutrition-composition",
+  "domain": "Nutrition",
+  "ml_task": "Classification",
+  "source": "USDA",
+  "description": "7,800+ foods, 80+ nutrients",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

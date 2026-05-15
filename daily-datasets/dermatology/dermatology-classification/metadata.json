@@ -1,0 +1,12 @@
+{
+  "dataset_id": 33,
+  "name": "Dermatology",
+  "folder": "dermatology/dermatology-classification",
+  "domain": "Dermatology",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "366 patients, 6 skin diseases",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

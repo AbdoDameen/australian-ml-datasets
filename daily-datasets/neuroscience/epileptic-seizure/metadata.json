@@ -1,0 +1,12 @@
+{
+  "dataset_id": 6,
+  "name": "Epileptic Seizure",
+  "folder": "neuroscience/epileptic-seizure",
+  "domain": "Neuroscience",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "11,500 EEG readings",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

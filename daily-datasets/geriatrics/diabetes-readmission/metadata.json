@@ -1,0 +1,12 @@
+{
+  "dataset_id": 26,
+  "name": "Diabetes Readmission",
+  "folder": "geriatrics/diabetes-readmission",
+  "domain": "Geriatrics",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "101,766 hospital records",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

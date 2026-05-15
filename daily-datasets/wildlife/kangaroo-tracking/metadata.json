@@ -1,0 +1,12 @@
+{
+  "dataset_id": 43,
+  "name": "Kangaroo Tracking (ALA)",
+  "folder": "wildlife/kangaroo-tracking",
+  "domain": "Wildlife",
+  "ml_task": "Classification",
+  "source": "ALA",
+  "description": "50K+ species occurrences",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

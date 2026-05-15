@@ -1,0 +1,12 @@
+{
+  "dataset_id": 4,
+  "name": "Wine Quality",
+  "folder": "chemistry/wine-quality",
+  "domain": "Chemistry",
+  "ml_task": "Regression",
+  "source": "UCI",
+  "description": "4,898 wines, physicochemical properties",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

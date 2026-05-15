@@ -1,0 +1,12 @@
+{
+  "dataset_id": 29,
+  "name": "Crop Yields (Global)",
+  "folder": "agriculture/crop-yields",
+  "domain": "Agriculture",
+  "ml_task": "Regression",
+  "source": "OWID",
+  "description": "80K+ records, 100+ crops",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

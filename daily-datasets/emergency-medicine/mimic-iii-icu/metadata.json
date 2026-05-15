@@ -1,0 +1,12 @@
+{
+  "dataset_id": 37,
+  "name": "MIMIC-III ICU (Emergency)",
+  "folder": "emergency-medicine/mimic-iii-icu",
+  "domain": "Emergency-Medicine",
+  "ml_task": "Classification",
+  "source": "PhysioNet",
+  "description": "53,423 ICU admissions",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

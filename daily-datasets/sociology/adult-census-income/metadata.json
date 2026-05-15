@@ -1,0 +1,12 @@
+{
+  "dataset_id": 11,
+  "name": "Adult Census Income",
+  "folder": "sociology/adult-census-income",
+  "domain": "Sociology",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "48,842 individuals, income prediction",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

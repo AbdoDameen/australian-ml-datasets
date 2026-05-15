@@ -1,0 +1,12 @@
+{
+  "dataset_id": 50,
+  "name": "PISA Global Scores",
+  "folder": "education/pisa-global-scores",
+  "domain": "Education",
+  "ml_task": "Regression",
+  "source": "OECD",
+  "description": "600K+ students, 80 countries",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

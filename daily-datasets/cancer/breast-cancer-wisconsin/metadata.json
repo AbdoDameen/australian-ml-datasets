@@ -1,0 +1,12 @@
+{
+  "dataset_id": 8,
+  "name": "Breast Cancer Wisconsin",
+  "folder": "cancer/breast-cancer-wisconsin",
+  "domain": "Cancer",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "569 patients, malignant vs benign",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

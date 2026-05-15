@@ -1,0 +1,12 @@
+{
+  "dataset_id": 12,
+  "name": "Drug Reviews",
+  "folder": "pharmacology/drug-reviews",
+  "domain": "Pharmacology",
+  "ml_task": "NLP",
+  "source": "UCI",
+  "description": "215K drug reviews, sentiment analysis",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

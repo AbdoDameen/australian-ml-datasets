@@ -1,0 +1,12 @@
+{
+  "dataset_id": 42,
+  "name": "Cervical Cancer Risk",
+  "folder": "oncology/cervical-cancer-risk",
+  "domain": "Oncology",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "858 patients, 36 risk factors",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

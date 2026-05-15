@@ -1,0 +1,12 @@
+{
+  "dataset_id": 17,
+  "name": "Diabetic Retinopathy",
+  "folder": "ophthalmology/diabetic-retinopathy",
+  "domain": "Ophthalmology",
+  "ml_task": "Image Classification",
+  "source": "Kaggle",
+  "description": "35K retina images",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_id": 53,
+  "name": "Land Use Change (NSW)",
+  "folder": "environmental/land-use-change",
+  "domain": "Environmental",
+  "ml_task": "Classification",
+  "source": "SEED NSW",
+  "description": "500K+ land parcels",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

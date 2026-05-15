@@ -1,0 +1,12 @@
+{
+  "dataset_id": 15,
+  "name": "Protein Tertiary Structure",
+  "folder": "biochemistry/protein-tertiary-structure",
+  "domain": "Biochemistry",
+  "ml_task": "Regression",
+  "source": "UCI",
+  "description": "45,730 proteins, RMSD prediction",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

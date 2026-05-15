@@ -1,0 +1,12 @@
+{
+  "dataset_id": 49,
+  "name": "Lupus Gene Expression",
+  "folder": "immunology/lupus-gene-expression",
+  "domain": "Immunology",
+  "ml_task": "Classification",
+  "source": "NCBI GEO",
+  "description": "1,200+ samples",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_id": 13,
+  "name": "Human Activity Recognition",
+  "folder": "biophysics/human-activity-recognition",
+  "domain": "Biophysics",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "10,299 smartphone sensor samples",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

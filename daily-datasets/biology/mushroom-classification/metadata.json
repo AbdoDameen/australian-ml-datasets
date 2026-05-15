@@ -1,0 +1,12 @@
+{
+  "dataset_id": 5,
+  "name": "Mushroom Classification",
+  "folder": "biology/mushroom-classification",
+  "domain": "Biology",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "8,124 mushrooms, edible vs poisonous",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

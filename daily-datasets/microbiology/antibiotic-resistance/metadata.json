@@ -1,0 +1,12 @@
+{
+  "dataset_id": 55,
+  "name": "Antibiotic Resistance (AMR)",
+  "folder": "microbiology/antibiotic-resistance",
+  "domain": "Microbiology",
+  "ml_task": "Classification",
+  "source": "NCBI",
+  "description": "500K+ bacterial isolates",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

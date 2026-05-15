@@ -1,0 +1,12 @@
+{
+  "dataset_id": 54,
+  "name": "Crop Pest Infestation",
+  "folder": "agriculture/crop-pest-infestation",
+  "domain": "Agriculture",
+  "ml_task": "Classification",
+  "source": "DAFF",
+  "description": "10K+ pest records",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

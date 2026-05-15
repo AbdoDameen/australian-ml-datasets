@@ -1,0 +1,12 @@
+{
+  "dataset_id": 44,
+  "name": "Student Performance",
+  "folder": "education/student-performance",
+  "domain": "Education",
+  "ml_task": "Regression",
+  "source": "UCI",
+  "description": "1,044 students, grade prediction",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

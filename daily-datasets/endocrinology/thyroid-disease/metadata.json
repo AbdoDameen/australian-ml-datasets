@@ -1,0 +1,12 @@
+{
+  "dataset_id": 38,
+  "name": "Thyroid Disease",
+  "folder": "endocrinology/thyroid-disease",
+  "domain": "Endocrinology",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "7,200 patients, hyperthyroid",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}
