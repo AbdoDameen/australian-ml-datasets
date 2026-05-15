@@ -1,0 +1,119 @@
+{
+  "dataset": {
+    "name": "Western Australian Mining Tenements",
+    "source_id": "DMIRS-003",
+    "source_url": "https://data.wa.gov.au",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "last_updated": "2026-05-06",
+    "rows_raw": 5000,
+    "columns_raw": 40,
+    "rows_processed": 5000,
+    "columns_processed": 23,
+    "rows_ml_features": 5000,
+    "columns_ml_features": 23
+  },
+  "pipeline": {
+    "script": "prepare_dataset.py",
+    "steps": [
+      "load_raw_csv",
+      "standardise_column_names",
+      "drop_internal_and_redundant_columns",
+      "parse_date_columns",
+      "extract_date_features",
+      "create_target_variable",
+      "impute_missing_values",
+      "encode_categoricals",
+      "save_clean_data",
+      "scale_and_save_ml_features"
+    ],
+    "missing_value_strategy": {
+      "text": "fill with 'Unknown'",
+      "numeric": "fill with column median"
+    },
+    "categorical_encoding": {
+      "low_cardinality": "one-hot encoding",
+      "high_cardinality": "frequency encoding",
+      "low_card_columns": ["type", "survstatus"],
+      "high_card_columns": ["fmt_tenid"]
+    },
+    "scaling": {
+      "method": "StandardScaler (mean=0, std=1)",
+      "excluded_from_scaling": ["is_live"],
+      "scaler_file": "features/scaler.pkl"
+    }
+  },
+  "target": {
+    "name": "is_live",
+    "type": "binary",
+    "description": "1 if tenement status is LIVE, 0 otherwise",
+    "distribution": {
+      "live_count": 3344,
+      "live_pct": 66.88,
+      "other_count": 1656,
+      "other_pct": 33.12
+    },
+    "source_column": "tenstatus"
+  },
+  "features": {
+    "processed_columns": [
+      {"name": "holdercnt", "type": "float64", "description": "Number of tenement holders"},
+      {"name": "legal_area", "type": "float64", "description": "Legal area in hectares"},
+      {"name": "grantyear", "type": "Int64", "description": "Grant year"},
+      {"name": "grantmonth", "type": "Int64", "description": "Grant month"},
+      {"name": "grantday", "type": "Int64", "description": "Grant day of month"},
+      {"name": "grantdayofweek", "type": "Int64", "description": "Grant day of week (0=Mon)"},
+      {"name": "grantquarter", "type": "Int64", "description": "Grant quarter (1-4)"},
+      {"name": "startyear", "type": "Int64", "description": "Start year"},
+      {"name": "startmonth", "type": "Int64", "description": "Start month"},
+      {"name": "startday", "type": "Int64", "description": "Start day of month"},
+      {"name": "startdayofweek", "type": "Int64", "description": "Start day of week (0=Mon)"},
+      {"name": "startquarter", "type": "Int64", "description": "Start quarter (1-4)"},
+      {"name": "endyear", "type": "Int64", "description": "End year"},
+      {"name": "endmonth", "type": "Int64", "description": "End month"},
+      {"name": "endday", "type": "Int64", "description": "End day of month"},
+      {"name": "enddayofweek", "type": "Int64", "description": "End day of week (0=Mon)"},
+      {"name": "endquarter", "type": "Int64", "description": "End quarter (1-4)"},
+      {"name": "is_live", "type": "int64", "description": "Target: 1=LIVE, 0=other"},
+      {"name": "type_COAL MINING LEASE", "type": "uint8", "description": "One-hot: tenement is a coal mining lease"},
+      {"name": "type_EXPLORATION LICENCE", "type": "uint8", "description": "One-hot: tenement is an exploration licence"},
+      {"name": "survstatus_SURVEYED", "type": "uint8", "description": "One-hot: tenement boundaries surveyed"},
+      {"name": "survstatus_UNSURVEYED", "type": "uint8", "description": "One-hot: tenement boundaries unsurveyed"},
+      {"name": "fmt_tenid_freq", "type": "float64", "description": "Frequency-encoded tenement ID"}
+    ]
+  },
+  "dropped_columns": {
+    "internal_ids": ["GmlId", "oid", "gid", "tenid"],
+    "raw_geometry": ["Shape"],
+    "time_only": ["granttime", "starttime", "endtime"],
+    "holder_details": ["holder1","holder2","holder3","holder4","holder5","holder6","holder7","holder8","holder9"],
+    "address_details": ["addr1","addr2","addr3","addr4","addr5","addr6","addr7","addr8","addr9"],
+    "operational": ["special_in", "extract_da"],
+    "raw_dates": ["grantdate", "startdate", "enddate"],
+    "raw_status": ["tenstatus"],
+    "geo_derived": ["st_area_the_geom", "st_perimeter_the_geom"],
+    "near_constant": ["unit_of_me"]
+  },
+  "output_files": {
+    "clean_data": {
+      "path": "processed/mining_tenements_clean.csv",
+      "encoding": "UTF-8",
+      "size_bytes": 337080
+    },
+    "ml_features": {
+      "path": "features/mining_tenements_ml.csv",
+      "encoding": "UTF-8",
+      "size_bytes": 329000
+    },
+    "scaler": {
+      "path": "features/scaler.pkl",
+      "format": "pickle",
+      "size_bytes": 1400
+    }
+  },
+  "notes": [
+    "1656 records (33.1%) have missing grant and end dates — these are typically pending or newer tenements without finalised dates",
+    "All 5000 tenement IDs (fmt_tenid) are unique — frequency encoding acts as a density/probability feature",
+    "Dataset is moderately imbalanced for LIVE vs non-LIVE (67:33) — consider class weights or resampling for training",
+    "Geometry column (Shape) removed — use the raw KMZ/SHP files in raw/ for spatial analysis"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "dataset_name": "nsw-dwelling-units",
+  "title": "Number of dwelling units approved, by sector, building type, and series type - New South Wales",
+  "source": "Australian Bureau of Statistics (ABS) - Building Approvals Australia",
+  "source_url": "https://www.abs.gov.au/statistics/industry/building-and-construction/building-approvals-australia/latest-release#data-downloads",
+  "license": "ABS Data - Commonwealth of Australia (Free use with attribution)",
+  "created_date": "2026-05-14 14:00:42.322062",
+  "description": "Metadata index of time series for the number of dwelling units approved in New South Wales, Australia. Each row represents one ABS data series identified by Series ID, with information on building type (Houses, Dwellings excluding houses, Total), sector (Private, Total), series type (Original, Seasonally Adjusted, Trend), date range, and observation count.",
+  "rows_original": 17,
+  "rows_clean": 16,
+  "columns_original": 12,
+  "columns_clean": 34,
+  "features_for_ml": 16,
+  "series_count": 16,
+  "unique_series_ids": 16,
+  "building_types": [
+    "Houses",
+    "Dwellings excluding houses",
+    "Total (Type of Building)"
+  ],
+  "sectors": [
+    "Private Sector",
+    "Total Sectors"
+  ],
+  "series_types": [
+    "Original",
+    "Seasonally Adjusted",
+    "Trend"
+  ],
+  "date_range": {
+    "earliest_start": "1983",
+    "latest_end": "2026"
+  },
+  "target_variable": "no_obs (number of observations per series)",
+  "train_samples": 12,
+  "test_samples": 4,
+  "ml_features": [
+    "no_obs",
+    "collection_month",
+    "start_decade_num",
+    "series_span_years",
+    "start_month",
+    "sector_encoded",
+    "is_original",
+    "is_seasonally_adjusted",
+    "is_trend",
+    "prefix_freq",
+    "bldg_Dwellings excluding houses",
+    "bldg_Houses",
+    "bldg_Total (Type of Building)",
+    "era_2000s",
+    "era_2010s",
+    "era_2020s"
+  ],
+  "cleaning_steps": [
+    "Parsed raw CSV with multi-row header structure",
+    "Removed copyright/attribution rows from data",
+    "Dropped duplicate rows",
+    "Parsed semicolon-delimited data item descriptions into building_type (Houses, Dwellings excluding houses, Total) and sector (Private Sector, Total Sectors)",
+    "Parsed date strings into structured start_year, end_year, start_decade, and series_span_years",
+    "Filled numeric missing values with median",
+    "Created binary flags for series type (Original, Seasonally Adjusted, Trend)",
+    "Encoded sector as numeric (Private=0, Total=1)",
+    "One-hot encoded building type",
+    "Created time-based features: decade number, start month, era category",
+    "Frequency-encoded series ID prefix",
+    "StandardScaler normalization applied for ML-ready data (80/20 train/test split)"
+  ],
+  "file_manifest": {
+    "raw/nsw_dwelling_units_clean.csv": "Original cleaned CSV from ABS source",
+    "processed/nsw_dwelling_units_clean.csv": "Cleaned dataset with engineered features and parsed columns",
+    "features/X_train_scaled.csv": "Scaled training features (80%)",
+    "features/X_test_scaled.csv": "Scaled test features (20%)",
+    "features/y_train.csv": "Training target (no_obs)",
+    "features/y_test.csv": "Test target (no_obs)",
+    "features/scaler.pkl": "Fitted StandardScaler for normalization",
+    "features/sector_mapping.csv": "Sector to encoded value mapping",
+    "metadata.json": "This metadata file",
+    "README.md": "Dataset documentation and usage guide",
+    "DATA_PREPARATION_PROCESS.md": "Full process documentation",
+    "prepare_dataset.py": "Reproducible preparation script"
+  }
+}

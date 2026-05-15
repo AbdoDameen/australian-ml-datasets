@@ -1,8 +1,0 @@
-# Generated data files — too large for git (338 MB+)
-# Re-run prepare_dataset.py to regenerate
-processed/
-features/
-
-# Raw Excel is 200 MB — exceeds GitHub's 100 MB limit
-# Keep source file locally or download from ABS
-raw/
