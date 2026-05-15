@@ -8,8 +8,8 @@
 </p>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/datasets-11-1E3A5F?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/domains-6-0A66C2?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/datasets-60-1E3A5F?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/domains-45-0A66C2?style=for-the-badge" />
   <img src="https://img.shields.io/badge/language-Python-3776AB?style=for-the-badge&logo=python" />
   <img src="https://img.shields.io/badge/license-Varies-8B5CF6?style=for-the-badge" />
 </div>
@@ -34,22 +34,23 @@ Each dataset comes with a `prepare_dataset.py` script so you can see exactly wha
 
 ## Datasets
 
-Browse the `datasets/` folder — each dataset lives under a domain directory. Eleven of them across eight domains: climate data, mining tenements, power plant emissions, car prices, aircraft registrations, housing approvals, child mortality, socioeconomic indexes, and video game sales. If it's Australian and vaguely useful for ML, it's probably in here.
+Browse the root folder — every dataset lives in its own domain directory. **60 datasets** across **45 domains**:
 
 ```
-datasets/
-├── weather/rain-in-australia/
-├── energy/carma-power-plant-emissions/
-├── resources/mining-tenements/
-├── housing/nsw-dwelling-units/
-├── transport/aircraft-register/
-├── transport/australia-car-market/
-├── health/child-mortality-1970-2000/
-├── socioeconomic/seifa-1996-2021/
-└── gaming/video-game-sales/
+├── medicine/heart-disease/
+├── cancer/breast-cancer-wisconsin/
+├── oncology/cervical-cancer-risk/
+├── genomics/gene-expression-cancer/
+├── microbiology/ecoli-protein-localization/
+├── neuroscience/epileptic-seizure/
+├── climate/earth-surface-temperature/
+├── ecology/forest-cover-type/
+├── chemistry/wine-quality/
+├── pharmacology/drug-reviews/
+└── ...and 50 more in _catalog/
 ```
 
-Eleven datasets across eight domains, from climate variables to mining tenements to video game sales. Population data, weather stations, power plant emissions, car prices, aircraft registrations — if it's Australian and useful for ML, it's probably in here.
+Full catalog: `_catalog/20_datasets_catalog.md`
 
 ---
 
