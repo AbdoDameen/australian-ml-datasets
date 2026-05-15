@@ -1,74 +1,85 @@
 # MASTER DATASET TRACKER — 60 Datasets
 
-| # | Dataset | Domain | ML Task | Source | Status |
-|---|---------|--------|---------|--------|--------|
-| 01 | Heart Disease | Medicine | Classification | UCI | 📥 RAW DATA ONLY |
-| 02 | Gene Expression Cancer | Genomics | Classification | UCI | 📥 RAW DATA ONLY |
-| 03 | Earth Surface Temperature | Climate | Time Series | Kaggle | 📥 RAW DATA ONLY |
-| 04 | Wine Quality | Chemistry | Regression | UCI | 📥 RAW DATA ONLY |
-| 05 | Mushroom Classification | Biology | Classification | UCI | 📥 RAW DATA ONLY |
-| 06 | Epileptic Seizure | Neuroscience | Classification | UCI | ⬜ EMPTY |
-| 07 | Dengue Prediction | Infectious-Diseases | Regression | DrivenData | ⬜ EMPTY |
-| 08 | Breast Cancer Wisconsin | Cancer | Classification | UCI | 📥 RAW DATA ONLY |
-| 09 | E. coli Protein Localization | Microbiology | Classification | UCI | 📥 RAW DATA ONLY |
-| 10 | Handwritten Digits | Computer-Vision | Classification | UCI | 📥 RAW DATA ONLY |
-| 11 | Adult Census Income | Sociology | Classification | UCI | 📥 RAW DATA ONLY |
-| 12 | Drug Reviews | Pharmacology | NLP | UCI | ⬜ EMPTY |
-| 13 | Human Activity Recognition | Biophysics | Classification | UCI | 📥 RAW DATA ONLY |
-| 14 | Forest Cover Type | Ecology | Classification | UCI | 📥 RAW DATA ONLY |
-| 15 | Protein Tertiary Structure | Biochemistry | Regression | UCI | 📥 RAW DATA ONLY |
-| 16 | Cyberbullying Detection | Psychology | NLP | Kaggle | ⬜ EMPTY |
-| 17 | Diabetic Retinopathy | Ophthalmology | Image Classification | Kaggle | ⬜ EMPTY |
-| 18 | Australian Visitor Arrivals | Tourism | Forecasting | data.gov.au | 📥 RAW DATA ONLY |
-| 19 | Beachwatch Water Quality | Oceanography | Classification | NSW Gov | ⬜ EMPTY |
-| 20 | DNA Gene Sequences | Genomics | Classification | Kaggle | ⬜ EMPTY |
-| 21 | Beijing Air Quality | Environmental | Regression | UCI | 📥 RAW DATA ONLY |
-| 22 | DNA Methylation (Breast Cancer) | Epigenetics | Classification | NCBI GEO | ⬜ EMPTY |
-| 23 | EEG Brainwave (Alcoholism) | Neurology | Classification | UCI | ⬜ EMPTY |
-| 24 | Food Nutrition (USDA) | Nutrition | Classification | USDA | ⬜ EMPTY |
-| 25 | Chest X-Ray (Pneumonia) | Radiology | Image Classification | Kaggle | ⬜ EMPTY |
-| 26 | Diabetes Readmission | Geriatrics | Classification | UCI | 📥 RAW DATA ONLY |
-| 27 | Species Distribution (GBIF) | Ecology | Classification | GBIF | ⬜ EMPTY |
-| 28 | Liver Disease (ILPD) | Gastroenterology | Classification | UCI | 📥 RAW DATA ONLY |
-| 29 | Crop Yields (Global) | Agriculture | Regression | OWID | ⬜ EMPTY |
-| 30 | Gene Therapy Vectors | Gene-Therapy | Regression | AddGene | ⬜ EMPTY |
-| 31 | Forest Fires (Portugal) | Forestry | Regression | UCI | 📥 RAW DATA ONLY |
-| 32 | Chronic Kidney Disease | Nephrology | Classification | UCI | 📥 RAW DATA ONLY |
-| 33 | Dermatology | Dermatology | Classification | UCI | 📥 RAW DATA ONLY |
-| 34 | Uterine Cancer Radiogenomics | Oncology | Classification | UCI | ⬜ EMPTY |
-| 35 | Water Potability | Freshwater-Ecology | Classification | Kaggle | 📥 RAW DATA ONLY |
-| 36 | Fitbit Athlete Activity | Sports-Medicine | Regression | Kaggle | ⬜ EMPTY |
-| 37 | MIMIC-III ICU (Emergency) | Emergency-Medicine | Classification | PhysioNet | ⬜ EMPTY |
-| 38 | Thyroid Disease | Endocrinology | Classification | UCI | 📥 RAW DATA ONLY |
-| 39 | Foodborne Illness (CDC) | Food-Safety | Classification | CDC | ⬜ EMPTY |
-| 40 | Australian Rainfall (BOM) | Climatology | Forecasting | BOM | ⬜ EMPTY |
-| 41 | Wine Quality (Vinho Verde) | Oenology | Regression | UCI | ⬜ EMPTY |
-| 42 | Cervical Cancer Risk | Oncology | Classification | UCI | 📥 RAW DATA ONLY |
-| 43 | Kangaroo Tracking (ALA) | Wildlife | Classification | ALA | ⬜ EMPTY |
-| 44 | Student Performance | Education | Regression | UCI | 📥 RAW DATA ONLY |
-| 45 | Carbon Flux (OzFlux) | Climate | Regression | OzFlux | ⬜ EMPTY |
-| 46 | NHANES Health Survey | Public-Health | Regression | CDC | 📥 RAW DATA ONLY |
-| 47 | Fossil Occurrences (PBDB) | Palaeontology | Classification | PBDB | ⬜ EMPTY |
-| 48 | Route Optimization | Logistics | Regression | Kaggle | ⬜ EMPTY |
-| 49 | Lupus Gene Expression | Immunology | Classification | NCBI GEO | 📥 RAW DATA ONLY |
-| 50 | PISA Global Scores | Education | Regression | OECD | ⬜ EMPTY |
-| 51 | Soil Moisture (TERN) | Soil-Sciences | Regression | TERN | ⬜ EMPTY |
-| 52 | Tumour Immunotherapy | Immunology | Classification | NCBI GEO | ⬜ EMPTY |
-| 53 | Land Use Change (NSW) | Environmental | Classification | SEED NSW | ⬜ EMPTY |
-| 54 | Crop Pest Infestation | Agriculture | Classification | DAFF | ⬜ EMPTY |
-| 55 | Antibiotic Resistance (AMR) | Microbiology | Classification | NCBI | ⬜ EMPTY |
-| 56 | ACL Injury Prediction | Sports-Medicine | Classification | Kaggle | ⬜ EMPTY |
-| 57 | Protein Sequence (Bioinfo) | Bioinformatics | Classification | UCI | ⬜ EMPTY |
-| 58 | Hospital Readmission | Health-Informatics | Classification | UCI | ⬜ EMPTY |
-| 59 | Bushfire Risk (Australia) | Climate | Classification | BNHCRC | 📥 RAW DATA ONLY |
-| 60 | Depression Detection (NLP) | Nlp | NLP | Kaggle | ⬜ EMPTY |
+| # | Dataset | Domain | ML Task | Status | Rows |
+|---|---------|--------|---------|--------|:----:|
+| 01 | Crop Pest Infestation | Agriculture | Classification | ❌ MISSING | ? |
+| 02 | Crop Yields (Global) | Agriculture | Regression | ❌ MISSING | ? |
+| 03 | Protein Tertiary Structure | Biochemistry | Regression | 📥 HAS DATA | 45,730 |
+| 04 | Protein Sequence (Bioinfo) | Bioinformatics | Classification | 📥 HAS DATA | 20,000 |
+| 05 | Mushroom Classification | Biology | Classification | 📥 HAS DATA | 8,124 |
+| 06 | Human Activity Recognition | Biophysics | Classification | 📥 HAS DATA | 10,299 |
+| 07 | Breast Cancer Wisconsin | Cancer | Classification | 📥 HAS DATA | 569 |
+| 08 | Wine Quality | Chemistry | Regression | 📥 HAS DATA | 4,898 |
+| 09 | Bushfire Risk (Australia) | Climate | Classification | 📥 HAS DATA | ? |
+| 10 | Carbon Flux (OzFlux) | Climate | Regression | ❌ MISSING | ? |
+| 11 | Earth Surface Temperature | Climate | Time Series | 📥 HAS DATA | ? |
+| 12 | Australian Rainfall (BOM) | Climatology | Forecasting | ❌ MISSING | ? |
+| 13 | Handwritten Digits | Computer-Vision | Classification | 📥 HAS DATA | 7,400 |
+| 14 | Dermatology | Dermatology | Classification | ⚠️ SMALL DATASET (366 rows) | 366 |
+| 15 | Forest Cover Type | Ecology | Classification | 📥 HAS DATA | 581,012 |
+| 16 | Species Distribution (GBIF) | Ecology | Classification | ❌ MISSING | ? |
+| 17 | PISA Global Scores | Education | Regression | ❌ MISSING | ? |
+| 18 | Student Performance | Education | Regression | 📥 HAS DATA | 1,044 |
+| 19 | MIMIC-III ICU (Emergency) | Emergency-Medicine | Classification | ❌ MISSING | ? |
+| 20 | Thyroid Disease | Endocrinology | Classification | 📥 HAS DATA | 7,200 |
+| 21 | Carma Power Plant Emissions | Energy | Carma | ✅ PROCESSED | ? |
+| 22 | Beijing Air Quality | Environmental | Regression | 📥 HAS DATA | 43,824 |
+| 23 | Land Use Change (NSW) | Environmental | Classification | ❌ MISSING | ? |
+| 24 | DNA Methylation (Breast Cancer) | Epigenetics | Classification | ❌ MISSING | ? |
+| 25 | Foodborne Illness (CDC) | Food-Safety | Classification | 📥 HAS DATA | 50,000 |
+| 26 | Forest Fires (Portugal) | Forestry | Regression | 📥 HAS DATA | 517 |
+| 27 | Water Potability | Freshwater-Ecology | Classification | 📥 HAS DATA | 3,276 |
+| 28 | Video Game Sales | Gaming | Video | ✅ PROCESSED | ? |
+| 29 | Liver Disease (ILPD) | Gastroenterology | Classification | 📥 HAS DATA | 583 |
+| 30 | Gene Therapy Vectors | Gene-Therapy | Regression | ❌ MISSING | ? |
+| 31 | DNA Gene Sequences | Genomics | Classification | ❌ MISSING | ? |
+| 32 | Gene Expression Cancer | Genomics | Classification | 📥 HAS DATA | 801 |
+| 33 | Seismic Activity | Geology | Seismic | ❌ MISSING | ? |
+| 34 | Diabetes Readmission | Geriatrics | Classification | 📥 HAS DATA | ? |
+| 35 | Child Mortality 1970 2000 | Health | Child | ✅ PROCESSED | ? |
+| 36 | Hospital Readmission | Health-Informatics | Classification | ❌ MISSING | ? |
+| 37 | Nsw Dwelling Units | Housing | Nsw | ✅ PROCESSED | ? |
+| 38 | Lupus Gene Expression | Immunology | Classification | 📥 HAS DATA | ? |
+| 39 | Tumour Immunotherapy | Immunology | Classification | ❌ MISSING | ? |
+| 40 | Dengue Prediction | Infectious-Diseases | Regression | ❌ MISSING | ? |
+| 41 | Route Optimization | Logistics | Regression | ❌ MISSING | ? |
+| 42 | Heart Disease | Medicine | Classification | ⚠️ SMALL DATASET (303 rows) | 303 |
+| 43 | Antibiotic Resistance (AMR) | Microbiology | Classification | ❌ MISSING | ? |
+| 44 | E. coli Protein Localization | Microbiology | Classification | ⚠️ SMALL DATASET (336 rows) | 336 |
+| 45 | Chronic Kidney Disease | Nephrology | Classification | ⚠️ SMALL DATASET (400 rows) | 400 |
+| 46 | EEG Brainwave (Alcoholism) | Neurology | Classification | ❌ MISSING | ? |
+| 47 | Epileptic Seizure | Neuroscience | Classification | ❌ MISSING | ? |
+| 48 | Depression Detection (NLP) | Nlp | NLP | ❌ MISSING | ? |
+| 49 | Food Nutrition (USDA) | Nutrition | Classification | ❌ MISSING | ? |
+| 50 | Beachwatch Water Quality | Oceanography | Classification | ❌ MISSING | ? |
+| 51 | Wine Quality (Vinho Verde) | Oenology | Regression | ❌ MISSING | 4,898 |
+| 52 | Wine Quality V2 | Oenology | Wine | 📥 HAS DATA | ? |
+| 53 | Cervical Cancer Risk | Oncology | Classification | 📥 HAS DATA | 858 |
+| 54 | Uterine Cancer Radiogenomics | Oncology | Classification | ❌ MISSING | ? |
+| 55 | Diabetic Retinopathy | Ophthalmology | Image Classification | ❌ MISSING | ? |
+| 56 | Fossil Occurrences (PBDB) | Palaeontology | Classification | ❌ MISSING | ? |
+| 57 | Drug Reviews | Pharmacology | NLP | ❌ MISSING | ? |
+| 58 | Cyberbullying Detection | Psychology | NLP | 📥 HAS DATA | 47,000 |
+| 59 | NHANES Health Survey | Public-Health | Regression | 📥 HAS DATA | ? |
+| 60 | Chest X-Ray (Pneumonia) | Radiology | Image Classification | 📥 HAS DATA | 5,863 |
+| 61 | Mining Tenements | Resources | Mining | ✅ PROCESSED | ? |
+| 62 | Seifa 1996 2021 | Socioeconomic | Seifa | ✅ PROCESSED | ? |
+| 63 | Adult Census Income | Sociology | Classification | 📥 HAS DATA | 48,842 |
+| 64 | Soil Moisture (TERN) | Soil-Sciences | Regression | ❌ MISSING | ? |
+| 65 | Fitbit Athlete Activity | Sports-Medicine | Regression | ❌ MISSING | ? |
+| 66 | Australian Visitor Arrivals | Tourism | Forecasting | 📥 HAS DATA | ? |
+| 67 | Aircraft Register | Transport | Aircraft | ✅ PROCESSED | ? |
+| 68 | Australia Car Market | Transport | Australia | ✅ PROCESSED | ? |
+| 69 | Rain In Australia | Weather | Rain | 📥 HAS DATA | ? |
+| 70 | Kangaroo Tracking (ALA) | Wildlife | Classification | ❌ MISSING | ? |
 
 ---
 
 ## Legend
-- ✅ FULLY PROCESSED = pipeline complete, ready to use
-- 📥 RAW DATA ONLY = source data downloaded, needs pipeline
-- ⬜ EMPTY = needs data download + pipeline
+- ✅ PROCESSED = Pipeline complete, ML-ready
+- 📥 HAS DATA = Raw data downloaded, needs pipeline
+- ⚠️ SMALL DATASET = Under 500 rows, use for feature engineering demos
+- ❌ MISSING = No data yet, needs download
 
 ## Quick Pick
-Say **"Dataset [number]"** or **"Upload [name]"** to process any dataset.
+Say **"Dataset [number]"** to process any dataset.

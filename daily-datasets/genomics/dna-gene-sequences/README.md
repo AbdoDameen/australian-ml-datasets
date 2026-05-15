@@ -7,8 +7,7 @@
 
 ## Status
 
-⬜ EMPTY
-
+**Status:** ❌ MISSING
 ## Contents
 
 | Folder | Description |

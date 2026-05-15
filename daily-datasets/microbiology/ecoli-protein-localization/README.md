@@ -7,8 +7,7 @@
 
 ## Status
 
-📥 RAW DATA ONLY
-
+**Status:** ⚠️ SMALL DATASET (336 rows)
 ## Contents
 
 | Folder | Description |

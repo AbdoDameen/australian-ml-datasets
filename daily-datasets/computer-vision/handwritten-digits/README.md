@@ -7,8 +7,7 @@
 
 ## Status
 
-📥 RAW DATA ONLY
-
+**Status:** 📥 HAS DATA
 ## Contents
 
 | Folder | Description |
