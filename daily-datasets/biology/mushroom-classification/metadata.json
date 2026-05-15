@@ -1,12 +1,30 @@
 {
-  "dataset_id": 5,
-  "name": "Mushroom Classification",
-  "folder": "biology/mushroom-classification",
-  "domain": "Biology",
-  "ml_task": "Classification",
-  "source": "UCI",
-  "description": "8,124 mushrooms, edible vs poisonous",
-  "status": "\ud83d\udce5 RAW DATA ONLY",
-  "has_raw_data": true,
-  "has_pipeline": false
+  "dataset_name": "mushroom-classification",
+  "domain": "biology",
+  "source": "UCI Machine Learning Repository",
+  "source_url": "https://archive.ics.uci.edu/dataset/73/mushroom",
+  "description": "Mushroom records from Agaricus and Lepiota families \u2014 binary edible/poisonous classification",
+  "rows": 8124,
+  "columns": 23,
+  "instances": 8124,
+  "original_attributes": 22,
+  "encoded_features": 117,
+  "class_distribution": {
+    "edible": 4208,
+    "poisonous": 3916
+  },
+  "missing_handling": {
+    "stalk_root": "2480 '?' values replaced with 'missing' (new category)"
+  },
+  "transformations": [
+    "Loaded UCI .data file with 23 columns (class + 22 attributes)",
+    "Mapped single-letter codes to human-readable names",
+    "Removed 0 duplicate rows",
+    "Filled 2480 missing stalk_root values",
+    "One-hot encoded all 22 categorical features",
+    "Encoded target: e=0 (edible), p=1 (poisonous)",
+    "Stratified train/test split (80/20)",
+    "StandardScaler normalization applied"
+  ],
+  "created_date": "2026-05-15 15:38:13.666750"
 }
