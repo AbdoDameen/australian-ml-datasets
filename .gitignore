@@ -1,4 +1,18 @@
-# Python
+# ── Internal / scratch scripts (not for public sharing) ──
+**/inspect_zip.py
+**/_explore.py
+**/clean_dataset.py
+**/process_nsw.py
+
+# ── Raw source data (re-download from original source) ──
+**/raw/
+
+# ── Windows artifacts ──
+*:Zone.Identifier
+desktop.ini
+Thumbs.db
+
+# ── Python ──
 __pycache__/
 *.py[cod]
 *$py.class
@@ -23,25 +37,22 @@ wheels/
 .installed.cfg
 *.egg
 
-# Jupyter Notebook
+# ── Jupyter Notebook ──
 .ipynb_checkpoints
 *.ipynb_checkpoints
 
-# Data files (large)
+# ── Archive / large data ──
 *.csv.gz
 *.zip
 *.tar.gz
 *.parquet
 .DS_Store
 
-# IDE
+# ── IDE ──
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Large dataset files - add individual datasets as needed
-datasets/*/raw/
-datasets/*/processed/
-!datasets/*/.gitkeep
+# ── Secrets ──
 kaggle.json
