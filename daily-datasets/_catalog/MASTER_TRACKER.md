@@ -7,7 +7,7 @@
 | 03 | Protein Tertiary Structure | Biochemistry | Regression | 📥 HAS DATA | 45,730 |
 | 04 | Protein Sequence (Bioinfo) | Bioinformatics | Classification | 📥 HAS DATA | 20,000 |
 | 05 | Mushroom Classification | Biology | Classification | ✅ PROCESSED | 8,124 |
-| 06 | Human Activity Recognition | Biophysics | Classification | 📥 HAS DATA | 10,299 |
+| 06 | Human Activity Recognition | Biophysics | Classification | ✅ PUBLISHED | 10,299 |
 | 07 | Breast Cancer Wisconsin | Cancer | Classification | 📥 HAS DATA | 569 |
 | 08 | Wine Quality | Chemistry | Regression | 📥 HAS DATA | 4,898 |
 | 09 | Bushfire Risk (Australia) | Climate | Classification | 📥 HAS DATA | ? |

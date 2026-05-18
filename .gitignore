@@ -1,6 +1,7 @@
 # ── Internal / scratch scripts (not for public sharing) ──
 **/inspect_zip.py
 **/_explore.py
+**/expand_dataset.py
 **/clean_dataset.py
 **/process_nsw.py
 

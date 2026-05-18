@@ -1,12 +1,40 @@
 {
-  "dataset_id": 13,
-  "name": "Human Activity Recognition",
-  "folder": "biophysics/human-activity-recognition",
-  "domain": "Biophysics",
-  "ml_task": "Classification",
-  "source": "UCI",
-  "description": "10,299 smartphone sensor samples",
-  "status": "\ud83d\udce5 RAW DATA ONLY",
-  "has_raw_data": true,
-  "has_pipeline": false
+  "dataset_name": "human_activity_recognition",
+  "domain": "biophysics",
+  "source": "UCI Machine Learning Repository",
+  "source_url": "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+  "description": "Smartphone sensor (Samsung Galaxy S II) recordings of 30 subjects performing 6 activities. 561 time/frequency features from accelerometer and gyroscope.",
+  "created_date": "2026-05-18 15:35:04.681537",
+  "rows": 10299,
+  "columns": 565,
+  "features": 561,
+  "subjects": 30,
+  "activities": [
+    "LAYING",
+    "SITTING",
+    "STANDING",
+    "WALKING",
+    "WALKING_DOWNSTAIRS",
+    "WALKING_UPSTAIRS"
+  ],
+  "target": "activity_name (multi-class classification: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)",
+  "sensor_types": [
+    "accelerometer (3-axis)",
+    "gyroscope (3-axis)"
+  ],
+  "sampling_rate": "50 Hz",
+  "window_size": "2.56 sec (128 readings, 50% overlap)",
+  "column_list": [
+    "subject_id (int)",
+    "activity_id (int: 1-6)",
+    "activity_name (str: target)",
+    "split (str: train/test)",
+    "tBodyAcc-mean()-X..tBodyAcc-mean()-Z (3 cols)",
+    "tBodyAcc-std()-X..tBodyAcc-std()-Z (3 cols)",
+    "tGravityAcc-mean()-X..tGravityAcc-mean()-Z (3 cols)",
+    "tBodyAccJerk-mean()-X..tBodyAccJerk-mean()-Z (3 cols)",
+    "tBodyGyro-mean()-X..tBodyGyro-mean()-Z (3 cols)",
+    "... 561 time/frequency sensor features total"
+  ],
+  "missing_values_remaining": 0
 }
