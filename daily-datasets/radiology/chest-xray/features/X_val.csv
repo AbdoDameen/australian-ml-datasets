@@ -1,0 +1,17 @@
+image_path,label,split,filename,label_encoded
+raw/chest_xray/val/NORMAL/NORMAL2-IM-1427-0001.jpeg,NORMAL,val,NORMAL2-IM-1427-0001.jpeg,0
+raw/chest_xray/val/NORMAL/NORMAL2-IM-1430-0001.jpeg,NORMAL,val,NORMAL2-IM-1430-0001.jpeg,0
+raw/chest_xray/val/NORMAL/NORMAL2-IM-1431-0001.jpeg,NORMAL,val,NORMAL2-IM-1431-0001.jpeg,0
+raw/chest_xray/val/NORMAL/NORMAL2-IM-1436-0001.jpeg,NORMAL,val,NORMAL2-IM-1436-0001.jpeg,0
+raw/chest_xray/val/NORMAL/NORMAL2-IM-1437-0001.jpeg,NORMAL,val,NORMAL2-IM-1437-0001.jpeg,0
+raw/chest_xray/val/NORMAL/NORMAL2-IM-1438-0001.jpeg,NORMAL,val,NORMAL2-IM-1438-0001.jpeg,0
+raw/chest_xray/val/NORMAL/NORMAL2-IM-1440-0001.jpeg,NORMAL,val,NORMAL2-IM-1440-0001.jpeg,0
+raw/chest_xray/val/NORMAL/NORMAL2-IM-1442-0001.jpeg,NORMAL,val,NORMAL2-IM-1442-0001.jpeg,0
+raw/chest_xray/val/PNEUMONIA/person1946_bacteria_4874.jpeg,PNEUMONIA,val,person1946_bacteria_4874.jpeg,1
+raw/chest_xray/val/PNEUMONIA/person1946_bacteria_4875.jpeg,PNEUMONIA,val,person1946_bacteria_4875.jpeg,1
+raw/chest_xray/val/PNEUMONIA/person1947_bacteria_4876.jpeg,PNEUMONIA,val,person1947_bacteria_4876.jpeg,1
+raw/chest_xray/val/PNEUMONIA/person1949_bacteria_4880.jpeg,PNEUMONIA,val,person1949_bacteria_4880.jpeg,1
+raw/chest_xray/val/PNEUMONIA/person1950_bacteria_4881.jpeg,PNEUMONIA,val,person1950_bacteria_4881.jpeg,1
+raw/chest_xray/val/PNEUMONIA/person1951_bacteria_4882.jpeg,PNEUMONIA,val,person1951_bacteria_4882.jpeg,1
+raw/chest_xray/val/PNEUMONIA/person1952_bacteria_4883.jpeg,PNEUMONIA,val,person1952_bacteria_4883.jpeg,1
+raw/chest_xray/val/PNEUMONIA/person1954_bacteria_4886.jpeg,PNEUMONIA,val,person1954_bacteria_4886.jpeg,1

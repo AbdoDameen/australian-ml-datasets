@@ -1,0 +1,18 @@
+{
+  "name": "Chest X-Ray (Pneumonia)",
+  "domain": "radiology",
+  "source": "https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia",
+  "description": "Chest X-ray images for pneumonia classification (NORMAL vs PNEUMONIA)",
+  "samples": 5856,
+  "classes": [
+    "NORMAL",
+    "PNEUMONIA"
+  ],
+  "features": 5,
+  "target_column": "label",
+  "ml_task": "Image Classification",
+  "has_images": true,
+  "train_split": 5216,
+  "val_split": 16,
+  "test_split": 624
+}
