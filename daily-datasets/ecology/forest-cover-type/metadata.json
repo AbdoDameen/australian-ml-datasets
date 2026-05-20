@@ -1,0 +1,23 @@
+{
+  "dataset_id": 15,
+  "name": "Forest Cover Type",
+  "folder": "ecology/forest-cover-type",
+  "domain": "Ecology",
+  "ml_task": "Multi-class Classification",
+  "source": "UCI ML Repository",
+  "source_url": "https://archive.ics.uci.edu/dataset/31/covertype",
+  "citation": "Blackard, J.A. & Dean, D.J. (1999). Comparative accuracies of artificial neural networks and discriminant analysis in predicting forest cover types from cartographic variables.",
+  "size_rows": 581012,
+  "size_cols_raw": 55,
+  "size_cols_featured": 68,
+  "target_variable": "cover_type",
+  "target_classes": 7,
+  "class_names": ["Spruce/Fir", "Lodgepole Pine", "Ponderosa Pine", "Cottonwood/Willow", "Aspen", "Douglas-fir", "Krummholz"],
+  "train_test_split": "80/20 stratified",
+  "scaler": "StandardScaler",
+  "feature_engineering": ["elevation_slope", "horiz_vert_hydrology_ratio", "avg_hillshade", "hillshade_range", "total_hydrology_distance", "near_water", "near_road", "near_fire", "northness", "eastness", "wilderness_count", "soil_count"],
+  "status": "processed",
+  "has_raw_data": true,
+  "has_pipeline": true,
+  "files_too_large_for_git": true
+}

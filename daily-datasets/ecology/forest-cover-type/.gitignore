@@ -1,0 +1,3 @@
+# Large generated files — regenerate with prepare_dataset.py
+processed/
+features/

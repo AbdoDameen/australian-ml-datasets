@@ -16,7 +16,7 @@
 | 12 | Australian Rainfall (BOM) | Climatology | Forecasting | ❌ MISSING | ? |
 | 13 | Handwritten Digits | Computer-Vision | Classification | 📥 HAS DATA | 7,400 |
 | 14 | Dermatology | Dermatology | Classification | ⚠️ SMALL DATASET (366 rows) | 366 |
-| 15 | Forest Cover Type | Ecology | Classification | 📥 HAS DATA | 581,012 |
+| 15 | Forest Cover Type | Ecology | Classification | ✅ PROCESSED | 581,012 |
 | 16 | Species Distribution (GBIF) | Ecology | Classification | ❌ MISSING | ? |
 | 17 | PISA Global Scores | Education | Regression | ❌ MISSING | ? |
 | 18 | Student Performance | Education | Regression | 📥 HAS DATA | 1,044 |
