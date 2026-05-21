@@ -54,7 +54,7 @@
 | 50 | Beachwatch Water Quality | Oceanography | Classification | ❌ MISSING | ? |
 | 51 | Wine Quality (Vinho Verde) | Oenology | Regression | ❌ MISSING | 4,898 |
 | 52 | Wine Quality V2 | Oenology | Wine | 📥 HAS DATA | ? |
-| 53 | Cervical Cancer Risk | Oncology | Classification | 📥 HAS DATA | 858 |
+| 53 | Cervical Cancer Risk | Oncology | Classification | ✅ PROCESSED | 858 |
 | 54 | Uterine Cancer Radiogenomics | Oncology | Classification | ❌ MISSING | ? |
 | 55 | Diabetic Retinopathy | Ophthalmology | Image Classification | ❌ MISSING | ? |
 | 56 | Fossil Occurrences (PBDB) | Palaeontology | Classification | ❌ MISSING | ? |

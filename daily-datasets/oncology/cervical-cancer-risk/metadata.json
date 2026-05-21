@@ -1,0 +1,23 @@
+{
+  "dataset_id": 53,
+  "name": "Cervical Cancer Risk Factors",
+  "folder": "oncology/cervical-cancer-risk",
+  "domain": "Oncology",
+  "ml_task": "Binary Classification",
+  "source": "UCI ML Repository",
+  "source_url": "https://archive.ics.uci.edu/dataset/385/cervical+cancer+risk+factors",
+  "citation": "Fernandes, K., Cardoso, J. S., & Fernandes, J. (2017). Transfer learning with partial observability applied to cervical cancer screening.",
+  "size_rows": 835,
+  "size_cols_raw": 36,
+  "size_cols_featured": 36,
+  "target_variable": "Biopsy",
+  "target_classes": 2,
+  "class_names": ["Negative", "Positive"],
+  "imbalance_ratio": "93.6% negative / 6.4% positive",
+  "train_test_split": "80/20 stratified",
+  "scaler": "StandardScaler",
+  "feature_engineering": ["age_group", "sexual_activity_score", "smoking_years_per_age", "heavy_smoker", "hormonal_years_per_age", "std_count", "prior_diagnosis", "positive_screening"],
+  "status": "processed",
+  "has_raw_data": true,
+  "has_pipeline": true
+}
