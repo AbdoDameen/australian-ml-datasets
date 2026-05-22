@@ -1,0 +1,16 @@
+{
+  "dataset_id": 70,
+  "name": "Kangaroo Tracking (ALA)",
+  "folder": "wildlife/kangaroo-tracking",
+  "domain": "Wildlife",
+  "ml_task": "Object Detection",
+  "source": "GitHub (experiencor/kangaroo)",
+  "source_url": "https://github.com/experiencor/kangaroo",
+  "size_images": 164,
+  "size_annotations": 164,
+  "annotation_format": "PASCAL VOC XML",
+  "classes": ["kangaroo"],
+  "status": "has_data",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

@@ -71,7 +71,7 @@
 | 67 | Aircraft Register | Transport | Aircraft | ✅ PROCESSED | ? |
 | 68 | Australia Car Market | Transport | Australia | ✅ PROCESSED | ? |
 | 69 | Rain In Australia | Weather | Rain | 📥 HAS DATA | ? |
-| 70 | Kangaroo Tracking (ALA) | Wildlife | Classification | ❌ MISSING | ? |
+| 70 | Kangaroo Tracking (ALA) | Wildlife | Object Detection | 📥 HAS DATA | 164 |
 
 ---
 
