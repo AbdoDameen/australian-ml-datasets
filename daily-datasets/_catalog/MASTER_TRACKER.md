@@ -5,7 +5,7 @@
 | 01 | Crop Pest Infestation | Agriculture | Classification | ❌ MISSING | ? |
 | 02 | Crop Yields (Global) | Agriculture | Regression | ❌ MISSING | ? |
 | 03 | Protein Tertiary Structure | Biochemistry | Regression | 📥 HAS DATA | 45,730 |
-| 04 | Protein Sequence (Bioinfo) | Bioinformatics | Classification | 📥 HAS DATA | 20,000 |
+| 04 | Protein Sequence (Bioinfo) | Bioinformatics | Classification | ✅ PROCESSED | 60,000 |
 | 05 | Mushroom Classification | Biology | Classification | ✅ PROCESSED | 8,124 |
 | 06 | Human Activity Recognition | Biophysics | Classification | 📥 HAS DATA | 10,299 |
 | 07 | Breast Cancer Wisconsin | Cancer | Classification | 📥 HAS DATA | 569 |

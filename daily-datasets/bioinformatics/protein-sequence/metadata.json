@@ -1,0 +1,21 @@
+{
+  "dataset_id": 4,
+  "name": "Protein Sequence (Bioinfo)",
+  "folder": "bioinformatics/protein-sequence",
+  "domain": "Bioinformatics",
+  "ml_task": "Multi-class Classification",
+  "source": "UCI (enriched protein sequence dataset)",
+  "size_rows": 60000,
+  "size_cols_raw": 10,
+  "size_cols_featured": 11,
+  "target_variable": "protein_class",
+  "target_classes": 5,
+  "class_names": ["Enzyme", "Outras", "Receptor", "Structural", "Transport"],
+  "class_balance": "~20% each (perfectly balanced)",
+  "train_test_split": "80/20 stratified",
+  "scaler": "StandardScaler",
+  "feature_engineering": ["charge_density", "hydrophobicity_polar_interaction", "polar_apolar_ratio", "mass_per_residue"],
+  "status": "processed",
+  "has_raw_data": true,
+  "has_pipeline": true
+}
