@@ -1,0 +1,44 @@
+{
+  "dataset_name": "thyroid-disease",
+  "dataset_number": 20,
+  "domain": "Endocrinology",
+  "ml_task": "Classification (3-class)",
+  "source": "UCI Machine Learning Repository — Thyroid Disease (ann-thyroid subset)",
+  "source_url": "https://archive.ics.uci.edu/dataset/102/thyroid+disease",
+  "original_source": "Garavan Institute of Sydney, Australia / Ross Quinlan",
+  "donor": "Randolf Werner, Daimler-Benz, 1992",
+  "description": "Preprocessed thyroid disease records for backpropagation benchmarking. Determines whether a patient is hypothyroid (subnormal functioning), hyperfunction, or normal.",
+  "total_rows": 7200,
+  "total_columns": 24,
+  "train_rows": 3772,
+  "test_rows": 3428,
+  "split_ratio": "80/20 stratified (pre-existing train/test recombined and re-split)",
+  "class_column": "thyroid_class",
+  "class_names": {
+    "1": "normal",
+    "2": "hyperfunction",
+    "3": "subnormal functioning"
+  },
+  "class_balance": {
+    "normal": 166,
+    "hyperfunction": 368,
+    "subnormal": 6666
+  },
+  "missing_values": 0,
+  "duplicates": 71,
+  "features": {
+    "continuous": ["age", "tsh", "t3", "tt4", "t4u", "fti"],
+    "binary": ["sex", "on_thyroxine", "query_on_thyroxine", "on_antithyroid_medication", "thyroid_surgery", "query_hypothyroid", "query_hyperthyroid", "pregnant", "sick", "tumor", "lithium", "goitre", "tsh_measured", "t3_measured", "tt4_measured"],
+    "engineered": ["tsh_t3_ratio", "calculated_fti"]
+  },
+  "transformations": [
+    "Combined ann-train.data (3,772) and ann-test.data (3,428) into single dataset",
+    "Added column names based on Quinlan's hypothyroid schema (15 binary + 6 continuous indicators)",
+    "Engineered: TSH/T3 ratio (clinical indicator), calculated FTI (TT4 × T4U)",
+    "Scaled with StandardScaler (on train, transform test)",
+    "80/20 stratified split (preserving class distribution)"
+  ],
+  "licensing": "UCI ML Repository — no specific license; research use only",
+  "year_collected": "1984-1987",
+  "processing_date": "2026-05-26"
+}

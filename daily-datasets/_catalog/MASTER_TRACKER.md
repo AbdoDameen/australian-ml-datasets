@@ -21,7 +21,7 @@
 | 17 | PISA Global Scores | Education | Regression | ❌ MISSING | ? |
 | 18 | Student Performance | Education | Regression | 📥 HAS DATA | 1,044 |
 | 19 | MIMIC-III ICU (Emergency) | Emergency-Medicine | Classification | ❌ MISSING | ? |
-| 20 | Thyroid Disease | Endocrinology | Classification | 📥 HAS DATA | 7,200 |
+|| 20 | Thyroid Disease | Endocrinology | Classification | ✅ PROCESSED | 7,200 |
 | 21 | Carma Power Plant Emissions | Energy | Carma | ✅ PROCESSED | ? |
 | 22 | Beijing Air Quality | Environmental | Regression | 📥 HAS DATA | 43,824 |
 | 23 | Land Use Change (NSW) | Environmental | Classification | ❌ MISSING | ? |
