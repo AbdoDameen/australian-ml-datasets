@@ -1,0 +1,39 @@
+{
+  "dataset_name": "water-potability",
+  "dataset_number": 27,
+  "domain": "Freshwater-Ecology",
+  "ml_task": "Binary Classification",
+  "source": "Kaggle — Water Potability",
+  "source_url": "https://www.kaggle.com/datasets/adityakadiwal/water-potability",
+  "description": "Water quality metrics for potability classification. Predicts whether water is safe to drink based on chemical properties (pH, hardness, solids, chloramines, sulfate, conductivity, organic carbon, trihalomethanes, turbidity).",
+  "total_rows": 3276,
+  "total_columns": 19,
+  "features_original": 9,
+  "features_engineered": 8,
+  "class_column": "potability",
+  "class_balance": {
+    "not_potable": 1998,
+    "potable": 1278
+  },
+  "missing_values_before": {
+    "ph": 491,
+    "sulfate": 781,
+    "trihalomethanes": 162
+  },
+  "missing_values_after": 0,
+  "duplicates": 0,
+  "transformations": [
+    "Lowercased column names, replaced spaces with underscores",
+    "Imputed missing values with median (ph: 7.04, sulfate: 333.07, trihalomethanes: 66.62)",
+    "Capped outliers at 3× IQR (pH, hardness, sulfate — 32 total)",
+    "Added salinity_index (conductivity × solids / 1e6)",
+    "Added organic_load (organic_carbon × trihalomethanes)",
+    "Added hardness_conductivity_ratio",
+    "Binned pH into 5 categories (acidic/neutral/alkaline buckets)",
+    "80/20 stratified train/test split",
+    "StandardScaler (fit on train, transform test)"
+  ],
+  "baseline_accuracy": 0.6494,
+  "licensing": "Kaggle — CC0: Public Domain",
+  "processing_date": "2026-05-26"
+}

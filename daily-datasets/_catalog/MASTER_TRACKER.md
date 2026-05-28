@@ -28,7 +28,7 @@
 | 24 | DNA Methylation (Breast Cancer) | Epigenetics | Classification | ❌ MISSING | ? |
 | 25 | Foodborne Illness (CDC) | Food-Safety | Classification | 📥 HAS DATA | 50,000 |
 | 26 | Forest Fires (Portugal) | Forestry | Regression | 📥 HAS DATA | 517 |
-| 27 | Water Potability | Freshwater-Ecology | Classification | 📥 HAS DATA | 3,276 |
+|| 27 | Water Potability | Freshwater-Ecology | Classification | ✅ PROCESSED | 3,276 |
 | 28 | Video Game Sales | Gaming | Video | ✅ PROCESSED | ? |
 | 29 | Liver Disease (ILPD) | Gastroenterology | Classification | 📥 HAS DATA | 583 |
 | 30 | Gene Therapy Vectors | Gene-Therapy | Regression | ❌ MISSING | ? |
