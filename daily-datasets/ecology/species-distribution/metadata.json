@@ -6,7 +6,7 @@
   "ml_task": "Multi-class Classification",
   "source": "GBIF",
   "description": "199K species occurrence records (sampled from 4.5M+ records)",
-  "status": "\u2705 PIPELINE READY",
+  "status": "\ud83d\udd27 HAS PIPELINE",
   "has_raw_data": true,
   "has_pipeline": true,
   "target": "class (taxonomic class)",

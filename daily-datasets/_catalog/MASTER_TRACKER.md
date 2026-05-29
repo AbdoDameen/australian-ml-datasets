@@ -11,14 +11,14 @@
 | 07 | Breast Cancer Wisconsin | Cancer | Classification | 📥 HAS DATA | 569 |
 | 08 | Wine Quality | Chemistry | Regression | 📥 HAS DATA | 4,898 |
 | 09 | Bushfire Risk (Australia) | Climate | Classification | 📥 HAS DATA | ? |
-| 10 | Carbon Flux (OzFlux) | Climate | Regression | ✅ PROCESSED | 112,033 |
+| 10 | Carbon Flux (OzFlux) | Climate | Regression | 🔧 HAS PIPELINE | 112,033 |
 | 11 | Earth Surface Temperature | Climate | Time Series | 📥 HAS DATA | ? |
-| 12 | Australian Rainfall (BOM) | Climatology | Forecasting | ✅ PROCESSED | 145,460 |
+| 12 | Australian Rainfall (BOM) | Climatology | Forecasting | 🔧 HAS PIPELINE | 145,460 |
 | 13 | Handwritten Digits | Computer-Vision | Classification | 📥 HAS DATA | 7,400 |
 | 14 | Dermatology | Dermatology | Classification | ⚠️ SMALL DATASET (366 rows) | 366 |
 | 15 | Forest Cover Type | Ecology | Classification | ✅ PROCESSED | 581,012 |
-| 16 | Species Distribution (GBIF) | Ecology | Classification | ✅ PROCESSED | 198,978 |
-| 17 | PISA Global Scores | Education | Classification | ✅ PROCESSED | 80,000 |
+| 16 | Species Distribution (GBIF) | Ecology | Classification | 🔧 HAS PIPELINE | 198,978 |
+| 17 | PISA Global Scores | Education | Classification | 🔧 HAS PIPELINE | 80,000 |
 | 18 | Student Performance | Education | Regression | 📥 HAS DATA | 1,044 |
 | 19 | MIMIC-III ICU (Emergency) | Emergency-Medicine | Classification | ✅ PROCESSED | 119 |
 || 20 | Thyroid Disease | Endocrinology | Classification | ✅ PROCESSED | 7,200 |
@@ -81,6 +81,7 @@
 - ⚠️ SMALL DATASET = Under 500 rows, use for feature engineering demos
 - ❌ MISSING = No data yet, needs download
 - 📦 RELEASE = Raw data on GitHub Releases, pipeline auto-downloads
+- 🔧 HAS PIPELINE = prepare_dataset.py exists, run it to produce ML-ready files
 
 ## Quick Pick
 Say **"Dataset [number]"** to process any dataset.

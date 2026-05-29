@@ -6,7 +6,7 @@
   "ml_task": "Binary Classification (RainToday)",
   "source": "BOM",
   "description": "145,460 daily rainfall records from 49 Australian locations. Target: RainToday (Yes/No).",
-  "status": "\u2705 READY FOR ML",
+  "status": "\ud83d\udd27 HAS PIPELINE",
   "has_raw_data": true,
   "has_pipeline": true,
   "pipeline": "prepare_dataset.py",

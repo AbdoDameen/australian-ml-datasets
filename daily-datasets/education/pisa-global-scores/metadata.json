@@ -6,7 +6,7 @@
   "ml_task": "Classification",
   "source": "OECD",
   "description": "PISA 2022 student questionnaire + cognitive scores, math proficiency classification (above/below OECD average)",
-  "status": "✅ PROCESSED",
+  "status": "\ud83d\udd27 HAS PIPELINE",
   "has_raw_data": false,
   "has_pipeline": true
 }

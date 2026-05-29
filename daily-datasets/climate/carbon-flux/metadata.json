@@ -6,7 +6,7 @@
   "ml_task": "Regression",
   "source": "OzFlux",
   "description": "500K+ CO2 flux measurements",
-  "status": "\ud83d\udce5 HAS DATA",
+  "status": "\ud83d\udd27 HAS PIPELINE",
   "has_raw_data": true,
   "has_pipeline": true,
   "pipeline_script": "prepare_dataset.py",
