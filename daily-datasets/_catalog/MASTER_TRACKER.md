@@ -20,7 +20,7 @@
 | 16 | Species Distribution (GBIF) | Ecology | Classification | ❌ MISSING | ? |
 | 17 | PISA Global Scores | Education | Regression | ❌ MISSING | ? |
 | 18 | Student Performance | Education | Regression | 📥 HAS DATA | 1,044 |
-| 19 | MIMIC-III ICU (Emergency) | Emergency-Medicine | Classification | ❌ MISSING | ? |
+| 19 | MIMIC-III ICU (Emergency) | Emergency-Medicine | Classification | ✅ PROCESSED | 119 |
 || 20 | Thyroid Disease | Endocrinology | Classification | ✅ PROCESSED | 7,200 |
 | 21 | Carma Power Plant Emissions | Energy | Carma | ✅ PROCESSED | ? |
 | 22 | Beijing Air Quality | Environmental | Regression | 📥 HAS DATA | 43,824 |

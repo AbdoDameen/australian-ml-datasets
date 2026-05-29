@@ -13,7 +13,9 @@
 desktop.ini
 Thumbs.db
 
-# ── Python ──
+# ── Generated / reproducible artifacts ──
+*.db
+*.sqlite
 __pycache__/
 *.py[cod]
 *$py.class

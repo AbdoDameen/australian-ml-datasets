@@ -1,0 +1,16 @@
+{
+  "dataset_id": 19,
+  "name": "MIMIC-III ICU (Emergency)",
+  "folder": "emergency-medicine/mimic-iii-icu",
+  "domain": "Emergency-Medicine",
+  "ml_task": "Classification",
+  "source": "Kaggle: ihssanened/mimic-iii-clinical-databaseopen-access (PhysioNet MIMIC-III subset)",
+  "description": "119 emergency admissions from MIMIC-III, 71 features for in-hospital mortality prediction (32.8% mortality rate)",
+  "status": "✅ PROCESSED",
+  "has_raw_data": true,
+  "has_pipeline": true,
+  "n_features": 71,
+  "n_train": 95,
+  "n_test": 24,
+  "target": "hospital_expire_flag (in-hospital mortality)"
+}
