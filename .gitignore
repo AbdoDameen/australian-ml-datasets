@@ -26,6 +26,15 @@ daily-datasets/ecology/species-distribution/features/
 daily-datasets/ecology/species-distribution/processed/
 daily-datasets/education/pisa-global-scores/features/
 daily-datasets/education/pisa-global-scores/processed/
+
+# ── Local-only: datasets not yet fully processed (tracked locally, not public) ──
+daily-datasets/_catalog/MASTER_TRACKER.md
+daily-datasets/agriculture/crop-pest-infestation/
+daily-datasets/agriculture/crop-yields/
+daily-datasets/climate/carbon-flux/
+daily-datasets/climatology/australian-rainfall/
+daily-datasets/ecology/species-distribution/
+daily-datasets/education/pisa-global-scores/
 __pycache__/
 *.py[cod]
 *$py.class
