@@ -1,0 +1,12 @@
+{
+  "dataset_id": 10,
+  "name": "Carbon Flux (OzFlux)",
+  "folder": "climate/carbon-flux",
+  "domain": "Climate",
+  "ml_task": "Regression",
+  "source": "OzFlux",
+  "description": "500K+ CO2 flux measurements",
+  "status": "📥 HAS DATA",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

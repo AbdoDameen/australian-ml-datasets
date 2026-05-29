@@ -1,0 +1,12 @@
+{
+  "dataset_id": 2,
+  "name": "Crop Yields (Global)",
+  "folder": "agriculture/crop-yields",
+  "domain": "Agriculture",
+  "ml_task": "Regression",
+  "source": "OWID",
+  "description": "GeoTIFF rasters for Maize, Rice, Soybean, Wheat (1982-2015)",
+  "status": "📥 HAS DATA",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_id": 12,
+  "name": "Australian Rainfall (BOM)",
+  "folder": "climatology/australian-rainfall",
+  "domain": "Climatology",
+  "ml_task": "Forecasting",
+  "source": "BOM",
+  "description": "100K+ daily rainfall records (weatherAUS.csv)",
+  "status": "📥 HAS DATA",
+  "has_raw_data": true,
+  "has_pipeline": false
+}
