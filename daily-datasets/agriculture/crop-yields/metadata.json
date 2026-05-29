@@ -1,0 +1,8 @@
+{
+  "name": "Crop Yields (Global)",
+  "domain": "Agriculture",
+  "ml_task": "Regression",
+  "source": "SAGE / UW-Madison",
+  "description": "GeoTIFF rasters for Maize, Rice, Soybean, Wheat at 5-min resolution, 1982-2015",
+  "data_location": "crop_yields_raw.zip on GitHub Releases (raw-data-v1)"
+}

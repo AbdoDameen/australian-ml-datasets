@@ -1,0 +1,8 @@
+{
+  "name": "Australian Rainfall (BOM)",
+  "domain": "Climatology",
+  "ml_task": "Classification",
+  "source": "Australian Bureau of Meteorology",
+  "description": "145,000+ daily weather observations from 49 stations across Australia",
+  "available_data": "weatherAUS.csv (14 MB)"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Carbon Flux (OzFlux)",
+  "domain": "Climate",
+  "ml_task": "Regression",
+  "source": "Global terrestrial ecosystem carbon flux dataset",
+  "description": "156,000+ carbon flux measurements (NEP, GPP, RE) from 414 sites, 41 countries",
+  "available_data": "1991-2023\u5168\u7403\u9646\u5730\u751f\u6001\u7cfb\u7edf8\u5929\u5c3a\u5ea6\u78b3\u901a\u91cf\u7ad9\u70b9\u89c2\u6d4b\u6570\u636e\u96c6_V2.xlsx (11 MB)"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Species Distribution (GBIF)",
+  "domain": "Ecology",
+  "ml_task": "Classification",
+  "source": "Global Biodiversity Information Facility",
+  "description": "23M species occurrence records from Australia (Aves focus)"
+}

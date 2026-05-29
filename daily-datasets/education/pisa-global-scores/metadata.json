@@ -1,0 +1,8 @@
+{
+  "name": "PISA Global Scores",
+  "domain": "Education",
+  "ml_task": "Classification / Regression",
+  "source": "OECD PISA 2022",
+  "description": "600K+ students, 80+ countries. Mathematics, reading, and science literacy assessment.",
+  "available_data": "CY08MSP_*.FORMAT.SAS files (schema definitions)"
+}

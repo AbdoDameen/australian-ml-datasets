@@ -1,0 +1,8 @@
+{
+  "name": "Crop Pest Infestation",
+  "domain": "Agriculture",
+  "ml_task": "Image Classification",
+  "source": "DAFF",
+  "description": "25,000+ crop disease images across 22 classes (Cashew, Cassava, Maize, Tomato)",
+  "data_location": "crop_pest_raw.zip on GitHub Releases (raw-data-v1)"
+}
