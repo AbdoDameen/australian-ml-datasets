@@ -6,7 +6,11 @@
   "ml_task": "Regression",
   "source": "OWID",
   "description": "GeoTIFF rasters for Maize, Rice, Soybean, Wheat (1982-2015)",
-  "status": "📥 HAS DATA",
+  "status": "📦 RELEASE (raw-data-v1)",
   "has_raw_data": true,
-  "has_pipeline": false
+  "has_pipeline": true,
+  "raw_data_source": "github_release",
+  "raw_data_url": "https://github.com/AbdoDameen/australian-ml-datasets/releases/download/raw-data-v1/crop_yields_raw.zip",
+  "pipeline_script": "prepare_dataset.py",
+  "raw_zip_size": "91 MB (compressed from 1.9 GB)"
 }

@@ -16,6 +16,16 @@ Thumbs.db
 # ── Generated / reproducible artifacts ──
 *.db
 *.sqlite
+
+# ── ML outputs too large for GitHub (>100 MB) — regenerate from pipeline ──
+daily-datasets/climatology/australian-rainfall/features/
+daily-datasets/climatology/australian-rainfall/processed/
+daily-datasets/climate/carbon-flux/features/
+daily-datasets/climate/carbon-flux/processed/
+daily-datasets/ecology/species-distribution/features/
+daily-datasets/ecology/species-distribution/processed/
+daily-datasets/education/pisa-global-scores/features/
+daily-datasets/education/pisa-global-scores/processed/
 __pycache__/
 *.py[cod]
 *$py.class

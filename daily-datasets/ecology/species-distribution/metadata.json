@@ -3,10 +3,34 @@
   "name": "Species Distribution (GBIF)",
   "folder": "ecology/species-distribution",
   "domain": "Ecology",
-  "ml_task": "Classification",
+  "ml_task": "Multi-class Classification",
   "source": "GBIF",
-  "description": "1M+ species occurrence records",
-  "status": "📥 HAS DATA",
+  "description": "199K species occurrence records (sampled from 4.5M+ records)",
+  "status": "\u2705 PIPELINE READY",
   "has_raw_data": true,
-  "has_pipeline": false
+  "has_pipeline": true,
+  "target": "class (taxonomic class)",
+  "num_classes": 1,
+  "num_features": 15,
+  "train_samples": 159182,
+  "test_samples": 39796,
+  "numeric_features": [
+    "decimalLatitude",
+    "decimalLongitude",
+    "year",
+    "month",
+    "day",
+    "elevation",
+    "individualCount"
+  ],
+  "categorical_features": [
+    "kingdom",
+    "phylum",
+    "countryCode",
+    "basisOfRecord"
+  ],
+  "rare_classes_collapsed_into_OTHER": 0,
+  "class_distribution_top10": {
+    "Aves": 198978
+  }
 }

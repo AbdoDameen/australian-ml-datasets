@@ -3,10 +3,10 @@
   "name": "PISA Global Scores",
   "folder": "education/pisa-global-scores",
   "domain": "Education",
-  "ml_task": "Regression",
+  "ml_task": "Classification",
   "source": "OECD",
-  "description": "600K+ students, 80 countries (SAS data files)",
-  "status": "📥 HAS DATA",
-  "has_raw_data": true,
-  "has_pipeline": false
+  "description": "PISA 2022 student questionnaire + cognitive scores, math proficiency classification (above/below OECD average)",
+  "status": "✅ PROCESSED",
+  "has_raw_data": false,
+  "has_pipeline": true
 }

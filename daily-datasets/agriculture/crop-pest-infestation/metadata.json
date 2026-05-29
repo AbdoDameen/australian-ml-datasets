@@ -5,8 +5,12 @@
   "domain": "Agriculture",
   "ml_task": "Classification",
   "source": "DAFF",
-  "description": "10K+ crop disease images across 24 classes (Cashew, Cassava, Maize, Tomato)",
-  "status": "📥 HAS DATA",
+  "description": "25K+ crop disease images across 22 classes (Cashew, Cassava, Maize, Tomato)",
+  "status": "📦 RELEASE (raw-data-v1)",
   "has_raw_data": true,
-  "has_pipeline": false
+  "has_pipeline": true,
+  "raw_data_source": "github_release",
+  "raw_data_url": "https://github.com/AbdoDameen/australian-ml-datasets/releases/download/raw-data-v1/crop_pest_raw.zip",
+  "pipeline_script": "prepare_dataset.py",
+  "raw_zip_size": "1.3 GB (compressed from 1.3 GB)"
 }
