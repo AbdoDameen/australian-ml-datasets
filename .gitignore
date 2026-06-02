@@ -17,6 +17,12 @@ Thumbs.db
 *.db
 *.sqlite
 
+# ── Crop Pest Infestation — raw image directories (download from Releases) ──
+daily-datasets/agriculture/crop-pest-infestation/Cashew*/
+daily-datasets/agriculture/crop-pest-infestation/Cassava*/
+daily-datasets/agriculture/crop-pest-infestation/Maize*/
+daily-datasets/agriculture/crop-pest-infestation/Tomato*/
+
 # ── ML outputs too large for GitHub (>100 MB) — regenerate from pipeline ──
 daily-datasets/climatology/australian-rainfall/features/
 daily-datasets/climatology/australian-rainfall/processed/

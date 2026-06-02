@@ -1,0 +1,182 @@
+{
+  "total_images": 25220,
+  "num_classes": 22,
+  "classes": [
+    "Cashew anthracnose",
+    "Cashew gumosis",
+    "Cashew healthy",
+    "Cashew leaf miner",
+    "Cashew red rust",
+    "Cassava bacterial blight",
+    "Cassava brown spot",
+    "Cassava green mite",
+    "Cassava healthy",
+    "Cassava mosaic",
+    "Maize fall armyworm",
+    "Maize grasshoper",
+    "Maize healthy",
+    "Maize leaf beetle",
+    "Maize leaf blight",
+    "Maize leaf spot",
+    "Maize streak virus",
+    "Tomato healthy",
+    "Tomato leaf blight",
+    "Tomato leaf curl",
+    "Tomato septoria leaf spot",
+    "Tomato verticulium wilt"
+  ],
+  "crops": [
+    "Cashew",
+    "Cassava",
+    "Maize",
+    "Tomato"
+  ],
+  "splits": {
+    "train": {
+      "count": 17654,
+      "pct": 70.0
+    },
+    "val": {
+      "count": 3783,
+      "pct": 15.0
+    },
+    "test": {
+      "count": 3783,
+      "pct": 15.0
+    }
+  },
+  "class_distribution": {
+    "Cashew anthracnose": {
+      "total": 1729,
+      "train": 1210,
+      "val": 260,
+      "test": 259
+    },
+    "Cashew gumosis": {
+      "total": 392,
+      "train": 274,
+      "val": 59,
+      "test": 59
+    },
+    "Cashew healthy": {
+      "total": 1368,
+      "train": 958,
+      "val": 205,
+      "test": 205
+    },
+    "Cashew leaf miner": {
+      "total": 1378,
+      "train": 965,
+      "val": 207,
+      "test": 206
+    },
+    "Cashew red rust": {
+      "total": 1682,
+      "train": 1177,
+      "val": 252,
+      "test": 253
+    },
+    "Cassava bacterial blight": {
+      "total": 2614,
+      "train": 1830,
+      "val": 392,
+      "test": 392
+    },
+    "Cassava brown spot": {
+      "total": 1481,
+      "train": 1037,
+      "val": 222,
+      "test": 222
+    },
+    "Cassava green mite": {
+      "total": 1015,
+      "train": 711,
+      "val": 152,
+      "test": 152
+    },
+    "Cassava healthy": {
+      "total": 1193,
+      "train": 835,
+      "val": 179,
+      "test": 179
+    },
+    "Cassava mosaic": {
+      "total": 1205,
+      "train": 843,
+      "val": 181,
+      "test": 181
+    },
+    "Maize fall armyworm": {
+      "total": 285,
+      "train": 199,
+      "val": 43,
+      "test": 43
+    },
+    "Maize grasshoper": {
+      "total": 673,
+      "train": 471,
+      "val": 101,
+      "test": 101
+    },
+    "Maize healthy": {
+      "total": 208,
+      "train": 146,
+      "val": 31,
+      "test": 31
+    },
+    "Maize leaf beetle": {
+      "total": 948,
+      "train": 664,
+      "val": 142,
+      "test": 142
+    },
+    "Maize leaf blight": {
+      "total": 1006,
+      "train": 704,
+      "val": 151,
+      "test": 151
+    },
+    "Maize leaf spot": {
+      "total": 1259,
+      "train": 881,
+      "val": 189,
+      "test": 189
+    },
+    "Maize streak virus": {
+      "total": 979,
+      "train": 685,
+      "val": 147,
+      "test": 147
+    },
+    "Tomato healthy": {
+      "total": 470,
+      "train": 329,
+      "val": 70,
+      "test": 71
+    },
+    "Tomato leaf blight": {
+      "total": 1301,
+      "train": 911,
+      "val": 195,
+      "test": 195
+    },
+    "Tomato leaf curl": {
+      "total": 518,
+      "train": 363,
+      "val": 77,
+      "test": 78
+    },
+    "Tomato septoria leaf spot": {
+      "total": 2743,
+      "train": 1920,
+      "val": 412,
+      "test": 411
+    },
+    "Tomato verticulium wilt": {
+      "total": 773,
+      "train": 541,
+      "val": 116,
+      "test": 116
+    }
+  }
+}

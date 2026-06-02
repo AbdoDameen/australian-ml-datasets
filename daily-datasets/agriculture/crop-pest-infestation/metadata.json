@@ -3,6 +3,17 @@
   "domain": "Agriculture",
   "ml_task": "Image Classification",
   "source": "DAFF",
-  "description": "25,000+ crop disease images across 22 classes (Cashew, Cassava, Maize, Tomato)",
-  "data_location": "crop_pest_raw.zip on GitHub Releases (raw-data-v1)"
+  "description": "25,220 crop disease/pest images across 22 classes (Cashew, Cassava, Maize, Tomato)",
+  "total_images": 25220,
+  "num_classes": 22,
+  "crops": ["Cashew", "Cassava", "Maize", "Tomato"],
+  "data_location": "crop_pest_raw.zip on GitHub Releases (raw-data-v1)",
+  "splits": {
+    "train": 17654,
+    "val": 3783,
+    "test": 3783
+  },
+  "split_strategy": "Stratified (70/15/15)",
+  "image_format": "JPEG",
+  "ready_for": ["PyTorch", "TensorFlow", "scikit-learn"]
 }
