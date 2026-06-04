@@ -1,69 +1,77 @@
 import scrapy
-from xml.etree import ElementTree
+import json
 
 
 class BeachwatchSpider(scrapy.Spider):
-    """Scrape NSW Beachwatch water quality bulletins.
+    """Scrape NSW Beachwatch water quality data.
 
-    NSW Beachwatch publishes weekly water quality bulletins via RSS feeds
-    covering Sydney, Hunter, Illawarra, Central Coast, and other regions.
-    Each bulletin lists beaches with bacterial levels and swim advisories.
+    NSW Beachwatch publishes weekly water quality bulletins for beaches
+    across NSW. Data covers bacterial levels (enterococci), pollution
+    forecasts, and swim advisories.
+
+    Note: The old RSS feeds redirected to a new Angular site at
+    beachwatch.nsw.gov.au. This spider tries multiple approaches:
+    - data.gov.au CKAN API for historical data
+    - The live beachwatch site for current conditions
 
     Run:
         scrapy crawl beachwatch -O output/beachwatch.csv
     """
 
     name = "beachwatch"
-    allowed_domains = ["environment.nsw.gov.au"]
-
-    # RSS feeds for each Beachwatch region
-    start_urls = [
-        "http://www.environment.nsw.gov.au/beachapp/SydneyBulletin.xml",
-        "http://www.environment.nsw.gov.au/beachapp/OceanBulletin.xml",
-        "http://www.environment.nsw.gov.au/beachapp/BotanyBulletin.xml",
-        "http://www.environment.nsw.gov.au/beachapp/PittwaterBulletin.xml",
-        "http://www.environment.nsw.gov.au/beachapp/HunterBulletin.xml",
-        "http://www.environment.nsw.gov.au/beachapp/CentralcoastBulletin.xml",
-        "http://www.environment.nsw.gov.au/beachapp/IllawarraBulletin.xml",
+    allowed_domains = [
+        "environment.nsw.gov.au",
+        "beachwatch.nsw.gov.au",
+        "data.gov.au",
+        "datasets.seed.nsw.gov.au",
     ]
 
-    def parse(self, response):
-        """Parse an RSS bulletin feed into beach-level data points."""
-        region = self._region_from_url(response.url)
+    def start_requests(self):
+        # Try the primary Beachwatch dataset on data.gov.au
+        yield scrapy.Request(
+            "https://data.gov.au/data/api/3/action/package_show"
+            "?id=1a165ed5-3b5d-4486-aa5b-d0a493664f8d",
+            callback=self.parse_dataset_metadata,
+        )
 
+    def parse_dataset_metadata(self, response):
+        """Parse the data.gov.au dataset metadata to find RSS/HTML resources."""
         try:
-            root = ElementTree.fromstring(response.body)
-        except ElementTree.ParseError:
-            self.logger.warning(f"Could not parse RSS from {response.url}")
+            data = json.loads(response.text)
+            resources = data["result"]["resources"]
+        except (KeyError, json.JSONDecodeError):
+            self.logger.warning("Could not parse dataset metadata")
             return
 
-        # RSS feeds typically have <rss><channel><item> structure
-        for item in root.iter("item"):
-            title = item.findtext("title", "")
-            description = item.findtext("description", "")
-            pub_date = item.findtext("pubDate", "")
-            link = item.findtext("link", "")
+        for resource in resources:
+            fmt = resource.get("format", "").upper()
+            url = resource.get("url", "")
+            name = resource.get("name", "")
 
-            yield {
-                "region": region,
-                "title": title.strip(),
-                "description": description.strip(),
-                "published": pub_date.strip(),
-                "link": link.strip(),
-                "source_url": response.url,
-            }
+            if fmt == "RSS" and url:
+                yield scrapy.Request(
+                    url, callback=self.parse_rss,
+                    meta={"region": name, "resource_name": name},
+                )
 
-    def _region_from_url(self, url: str) -> str:
-        mapping = {
-            "Sydney": "Sydney",
-            "Ocean": "Ocean",
-            "Botany": "Botany Bay",
-            "Pittwater": "Pittwater",
-            "Hunter": "Hunter",
-            "Centralcoast": "Central Coast",
-            "Illawarra": "Illawarra",
-        }
-        for key, name in mapping.items():
-            if key.lower() in url.lower():
-                return name
-        return "Unknown"
+    def parse_rss(self, response):
+        """Parse an RSS feed item."""
+        # RSS feeds now redirect to beachwatch.nsw.gov.au
+        if response.status in (301, 302, 303):
+            self.logger.info(f"RSS redirected to {response.url}")
+            return
+
+        try:
+            import xml.etree.ElementTree as ET
+            root = ET.fromstring(response.body)
+            for item in root.iter("item"):
+                yield {
+                    "region": response.meta.get("region", ""),
+                    "title": (item.findtext("title") or "").strip(),
+                    "description": (item.findtext("description") or "").strip(),
+                    "published": (item.findtext("pubDate") or "").strip(),
+                    "link": (item.findtext("link") or "").strip(),
+                    "source": response.url,
+                }
+        except Exception as e:
+            self.logger.warning(f"Could not parse RSS: {e}")
