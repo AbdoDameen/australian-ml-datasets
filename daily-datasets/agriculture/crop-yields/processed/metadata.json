@@ -1,0 +1,93 @@
+{
+  "name": "Crop Yields (Global) \u2014 Australian Extract",
+  "domain": "Agriculture",
+  "ml_task": "Regression (predict crop yield in kg/ha)",
+  "source": "SAGE / UW-Madison Global Crop Yield Dataset (5-minute resolution)",
+  "source_url": "https://sage.nelson.wisc.edu/data-and-models/datasets/global-crop-yield-dataset-5-minute-resolution/",
+  "australia_bounds": {
+    "longitude": [
+      112,
+      155
+    ],
+    "latitude": [
+      -45,
+      -10
+    ]
+  },
+  "crops_in_australia": [
+    "maize",
+    "rice",
+    "wheat"
+  ],
+  "temporal_range": {
+    "start": 1982,
+    "end": 2015
+  },
+  "total_rows": 345678,
+  "columns": [
+    {
+      "name": "crop_*",
+      "type": "int (one-hot)",
+      "description": "Binary indicator for each crop (maize, rice, wheat)"
+    },
+    {
+      "name": "year",
+      "type": "int",
+      "description": "Harvest year (1982\u20132015)"
+    },
+    {
+      "name": "year_since_1982",
+      "type": "int",
+      "description": "Years since 1982 (temporal feature)"
+    },
+    {
+      "name": "decade",
+      "type": "int",
+      "description": "Decade grouping"
+    },
+    {
+      "name": "is_drought_year",
+      "type": "int (binary)",
+      "description": "Flag for known Australian drought years"
+    },
+    {
+      "name": "latitude",
+      "type": "float",
+      "description": "Pixel centroid latitude (EPSG:4326)"
+    },
+    {
+      "name": "longitude",
+      "type": "float",
+      "description": "Pixel centroid longitude (EPSG:4326)"
+    },
+    {
+      "name": "abs_latitude",
+      "type": "float",
+      "description": "Absolute latitude (spatial feature)"
+    },
+    {
+      "name": "zone_*",
+      "type": "int (one-hot)",
+      "description": "Australian climate zone (tropical / subtropical / temperate / cool_temperate)"
+    },
+    {
+      "name": "yield_kg_ha",
+      "type": "float",
+      "description": "Target \u2014 crop yield in kg per hectare"
+    }
+  ],
+  "features_ml": {
+    "feature_count": 11,
+    "scaler": "StandardScaler",
+    "test_split": 0.2
+  },
+  "transformations": [
+    "Extracted Australian pixels from 136 global GeoTIFF rasters",
+    "Removed duplicate pixel-year-crop combinations",
+    "Removed zero/negative yield values",
+    "IQR outlier treatment (3\u00d7 IQR per crop)",
+    "Added temporal features: year_since_1982, decade, is_drought_year",
+    "Added spatial features: abs_latitude, climate_zone (one-hot)",
+    "Crop type one-hot encoded"
+  ]
+}

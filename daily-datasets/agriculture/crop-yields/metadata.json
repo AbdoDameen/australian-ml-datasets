@@ -2,7 +2,11 @@
   "name": "Crop Yields (Global)",
   "domain": "Agriculture",
   "ml_task": "Regression",
-  "source": "SAGE / UW-Madison",
-  "description": "GeoTIFF rasters for Maize, Rice, Soybean, Wheat at 5-min resolution, 1982-2015",
-  "data_location": "crop_yields_raw.zip on GitHub Releases (raw-data-v1)"
+  "source": "SAGE / UW-Madison Global Crop Yield Dataset (5-minute resolution)",
+  "source_url": "https://sage.nelson.wisc.edu/data-and-models/datasets/global-crop-yield-dataset-5-minute-resolution/",
+  "description": "Australian extract of global crop yield rasters — 345k records across wheat, maize, rice at 5-min resolution (1982-2015)",
+  "data_location": "crop_yields_raw.zip on GitHub Releases (raw-data-v1)",
+  "crops_in_australia": ["wheat", "maize", "rice"],
+  "total_rows": 345678,
+  "total_features": 11
 }

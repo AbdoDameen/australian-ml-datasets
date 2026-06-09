@@ -23,6 +23,9 @@ daily-datasets/agriculture/crop-pest-infestation/Cassava*/
 daily-datasets/agriculture/crop-pest-infestation/Maize*/
 daily-datasets/agriculture/crop-pest-infestation/Tomato*/
 
+# ── Crop Yields — raw GeoTIFFs (600 MB) — download from Releases ──
+daily-datasets/agriculture/crop-yields/GlobalCropYield5min_V3/
+
 # ── ML outputs too large for GitHub (>100 MB) — regenerate from pipeline ──
 daily-datasets/climatology/australian-rainfall/features/
 daily-datasets/climatology/australian-rainfall/processed/

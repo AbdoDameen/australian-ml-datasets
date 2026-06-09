@@ -1,0 +1,13 @@
+[
+  "year_since_1982",
+  "is_drought_year",
+  "abs_latitude",
+  "zone_tropical",
+  "zone_subtropical",
+  "zone_temperate",
+  "zone_cool_temperate",
+  "zone_alpine",
+  "crop_maize",
+  "crop_rice",
+  "crop_wheat"
+]
