@@ -1,0 +1,192 @@
+{
+  "dataset_id": 45,
+  "name": "Chronic Kidney Disease",
+  "domain": "Nephrology",
+  "ml_task": "Binary Classification (ckd vs notckd)",
+  "source": "UCI Machine Learning Repository",
+  "source_url": "https://archive.ics.uci.edu/dataset/336/chronic_kidney_disease",
+  "citation": "Rubini, L., Soundarapandian, P., & Eswaran, P. (2015). Chronic Kidney Disease [Dataset]. UCI ML Repository. https://doi.org/10.24432/C5G020",
+  "rows": 400,
+  "raw_features": 24,
+  "engineered_features": 29,
+  "target": "class (1=ckd, 0=notckd)",
+  "class_balance": {
+    "1": 250,
+    "0": 150
+  },
+  "missing_values_before": "Yes (many columns had 2-10% missing)",
+  "missing_values_after": 0,
+  "columns": [
+    {
+      "name": "age",
+      "type": "float64",
+      "description": "Age (years)"
+    },
+    {
+      "name": "bp",
+      "type": "float64",
+      "description": "Blood pressure (mm/Hg)"
+    },
+    {
+      "name": "sg",
+      "type": "int64",
+      "description": "Specific gravity"
+    },
+    {
+      "name": "al",
+      "type": "int64",
+      "description": "Albumin (0-5 scale)"
+    },
+    {
+      "name": "su",
+      "type": "int64",
+      "description": "Sugar (0-5 scale)"
+    },
+    {
+      "name": "rbc",
+      "type": "int64",
+      "description": "Red blood cells (normal/abnormal)"
+    },
+    {
+      "name": "pc",
+      "type": "int64",
+      "description": "Pus cell (normal/abnormal)"
+    },
+    {
+      "name": "pcc",
+      "type": "int64",
+      "description": "Pus cell clumps (present/notpresent)"
+    },
+    {
+      "name": "ba",
+      "type": "int64",
+      "description": "Bacteria (present/notpresent)"
+    },
+    {
+      "name": "bgr",
+      "type": "float64",
+      "description": "Blood glucose random (mgs/dl)"
+    },
+    {
+      "name": "bu",
+      "type": "float64",
+      "description": "Blood urea (mgs/dl)"
+    },
+    {
+      "name": "sc",
+      "type": "float64",
+      "description": "Serum creatinine (mgs/dl)"
+    },
+    {
+      "name": "sod",
+      "type": "float64",
+      "description": "Sodium (mEq/L)"
+    },
+    {
+      "name": "pot",
+      "type": "float64",
+      "description": "Potassium (mEq/L)"
+    },
+    {
+      "name": "hemo",
+      "type": "float64",
+      "description": "Hemoglobin (gms)"
+    },
+    {
+      "name": "pcv",
+      "type": "float64",
+      "description": "Packed cell volume (%)"
+    },
+    {
+      "name": "wbcc",
+      "type": "float64",
+      "description": "White blood cell count (cells/cmm)"
+    },
+    {
+      "name": "rbcc",
+      "type": "float64",
+      "description": "Red blood cell count (millions/cmm)"
+    },
+    {
+      "name": "htn",
+      "type": "int64",
+      "description": "Hypertension (yes/no)"
+    },
+    {
+      "name": "dm",
+      "type": "int64",
+      "description": "Diabetes mellitus (yes/no)"
+    },
+    {
+      "name": "cad",
+      "type": "int64",
+      "description": "Coronary artery disease (yes/no)"
+    },
+    {
+      "name": "appet",
+      "type": "int64",
+      "description": "Appetite (good/poor)"
+    },
+    {
+      "name": "pe",
+      "type": "int64",
+      "description": "Pedal edema (yes/no)"
+    },
+    {
+      "name": "ane",
+      "type": "int64",
+      "description": "Anemia (yes/no)"
+    },
+    {
+      "name": "class",
+      "type": "int64",
+      "description": "Derived feature (class)"
+    },
+    {
+      "name": "egfr_approx",
+      "type": "float64",
+      "description": "Derived feature (egfr_approx)"
+    },
+    {
+      "name": "bun_creatinine_ratio",
+      "type": "float64",
+      "description": "Derived feature (bun_creatinine_ratio)"
+    },
+    {
+      "name": "hemo_pcv_product",
+      "type": "float64",
+      "description": "Derived feature (hemo_pcv_product)"
+    },
+    {
+      "name": "comorbidity_count",
+      "type": "int64",
+      "description": "Derived feature (comorbidity_count)"
+    },
+    {
+      "name": "anemia_severity",
+      "type": "int8",
+      "description": "Derived feature (anemia_severity)"
+    }
+  ],
+  "derived_features": [
+    "egfr_approx \u2014 simplified eGFR from serum creatinine and age",
+    "bun_creatinine_ratio \u2014 BUN-to-creatinine ratio for kidney function",
+    "hemo_pcv_product \u2014 hemoglobin \u00d7 packed cell volume interaction",
+    "comorbidity_count \u2014 sum of hypertension, diabetes, CAD, anemia, edema",
+    "anemia_severity \u2014 ordinal severity based on hemoglobin thresholds"
+  ],
+  "transformations": [
+    "Dropped non-predictive 'id' column",
+    "Renamed wc\u2192wbcc, rc\u2192rbcc, classification\u2192class for UCI consistency",
+    "Removed duplicate rows",
+    "Filled numeric NaNs with median per column",
+    "Filled categorical NaNs with mode per column",
+    "IQR-based outlier capping (\u00d71.5) on lab values (age, bgr, bu, sc, etc.)",
+    "Binary categoricals mapped to 0/1 (rbc, pc, htn, dm, cad, etc.)",
+    "Derived medical features: eGFR, BUN/creatinine ratio, comorbidity count",
+    "Ordinal encoding for specific gravity, albumin, sugar",
+    "Factorized remaining object columns",
+    "StandardScaler normalization on train, transform on test",
+    "Stratified 80/20 train/test split"
+  ]
+}
