@@ -1,0 +1,13 @@
+{
+  "id": 62,
+  "dataset": "Australian Housing Prices",
+  "domain": "Housing",
+  "source": "ABS",
+  "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation",
+  "format": "CSV",
+  "rows_estimate": "100K+",
+  "ml_tasks": ["Regression", "Time Series Forecasting", "Classification"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Residential property price indexes and median house prices across Australian capital cities and regions."
+}

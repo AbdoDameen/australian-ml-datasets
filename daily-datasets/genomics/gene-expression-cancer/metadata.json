@@ -1,0 +1,12 @@
+{
+  "dataset_id": 2,
+  "name": "Gene Expression Cancer",
+  "folder": "genomics/gene-expression-cancer",
+  "domain": "Genomics",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "801 patients, 20K genes, 5 cancer types",
+  "status": "\ud83d\udce5 RAW DATA ONLY",
+  "has_raw_data": true,
+  "has_pipeline": false
+}

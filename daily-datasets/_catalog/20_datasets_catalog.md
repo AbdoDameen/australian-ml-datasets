@@ -799,3 +799,330 @@ Each day, pick one dataset from this catalog. I'll:
 | 58 | Hospital Readmission | Health Informatics | 101K+ | Classification | CSV | UCI |
 | 59 | Bushfire Risk (Aus) | Climate Adaptation | 50K+ | Classification | CSV | BNHCRC |
 | 60 | Depression Detection (NLP) | Mental Health / NLP | 40K+ | NLP | CSV | Kaggle |
+
+---
+
+## DATASET 61: Australian Electricity Generation
+**Domain:** Energy
+**Source:** AEMO — https://aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem
+**Format:** CSV
+**Rows:** 500K+ (5-minute generation intervals)
+**Target:** Generation output by fuel type
+**ML Tasks:** Time series forecasting, anomaly detection, regression
+**Citation:** AEMO. National Electricity Market data.
+**Download:** https://visualisations.aemo.com.au/aemo-nemui/
+
+---
+
+## DATASET 62: Australian Housing Prices
+**Domain:** Housing
+**Source:** ABS — https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation
+**Format:** CSV
+**Rows:** 100K+ (house price records)
+**Target:** Median property price
+**ML Tasks:** Regression, time series forecasting
+**Citation:** ABS. Residential Property Price Indexes (cat. 6416.0).
+**Download:** https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation
+
+---
+
+## DATASET 63: Australian Road Traffic Accidents
+**Domain:** Transport
+**Source:** BITRE / data.gov.au — https://data.gov.au/dataset/road-crash-data
+**Format:** CSV
+**Rows:** 1M+ (crash records)
+**Target:** Accident severity
+**ML Tasks:** Classification, clustering, anomaly detection
+**Citation:** BITRE. Road crash data Australia.
+**Download:** https://data.gov.au/dataset/road-crash-data
+
+---
+
+## DATASET 64: Australian Crime Statistics
+**Domain:** Socioeconomic
+**Source:** ABS — https://www.abs.gov.au/statistics/people/crime-and-justice
+**Format:** CSV
+**Rows:** 200K+ (offence records)
+**Target:** Crime rate / offence count
+**ML Tasks:** Time series forecasting, classification, clustering
+**Citation:** ABS. Recorded Crime - Victims (cat. 4510.0).
+**Download:** https://www.abs.gov.au/statistics/people/crime-and-justice
+
+---
+
+## DATASET 65: Australian Agricultural Commodity Prices
+**Domain:** Agriculture
+**Source:** ABARES — https://www.agriculture.gov.au/abares/data
+**Format:** CSV
+**Rows:** 100K+ (price records)
+**Target:** Commodity price
+**ML Tasks:** Time series forecasting, regression, anomaly detection
+**Citation:** ABARES. Agricultural commodity statistics.
+**Download:** https://www.agriculture.gov.au/abares/data
+
+---
+
+## DATASET 66: Australian Water Storage Levels
+**Domain:** Water Resources
+**Source:** BOM Water Data Online — http://www.bom.gov.au/water/data/
+**Format:** CSV
+**Rows:** 1M+ (daily storage records)
+**Target:** Storage volume / capacity percentage
+**ML Tasks:** Time series forecasting, regression, anomaly detection
+**Citation:** BOM. Water Data Online.
+**Download:** http://www.bom.gov.au/water/data/
+
+---
+
+## DATASET 67: Australian Hospital Admissions
+**Domain:** Health
+**Source:** AIHW — https://www.aihw.gov.au/reports-data/myhospitals
+**Format:** CSV
+**Rows:** 500K+ (admission records)
+**Target:** Length of stay / diagnosis
+**ML Tasks:** Time series forecasting, regression, classification
+**Citation:** AIHW. MyHospitals data.
+**Download:** https://www.aihw.gov.au/reports-data/myhospitals
+
+---
+
+## DATASET 68: Australian Stock Market (ASX)
+**Domain:** Finance
+**Source:** Yahoo Finance — https://au.finance.yahoo.com/
+**Format:** CSV
+**Rows:** 5M+ (trading days × stocks)
+**Target:** Stock price / return
+**ML Tasks:** Time series forecasting, regression, anomaly detection
+**Citation:** Yahoo Finance ASX historical data.
+**Download:** https://au.finance.yahoo.com/ (use yfinance library)
+
+---
+
+## DATASET 69: Australian Immigration Statistics
+**Domain:** Demographics
+**Source:** ABS / Department of Home Affairs — https://www.abs.gov.au/statistics/people/population/migration-australia
+**Format:** CSV
+**Rows:** 200K+ (migration records)
+**Target:** Net migration / visa grants
+**ML Tasks:** Time series forecasting, classification, regression
+**Citation:** ABS. Migration, Australia (cat. 3412.0).
+**Download:** https://www.abs.gov.au/statistics/people/population/migration-australia
+
+---
+
+## DATASET 70: Australian Population by LGA
+**Domain:** Demographics
+**Source:** ABS ERP — https://www.abs.gov.au/statistics/people/population/regional-population
+**Format:** CSV
+**Rows:** 500K+ (LGA-year records)
+**Target:** Estimated Resident Population
+**ML Tasks:** Time series forecasting, regression, clustering
+**Citation:** ABS. Regional Population by Age and Sex (cat. 3235.0).
+**Download:** https://www.abs.gov.au/statistics/people/population/regional-population
+
+---
+
+## DATASET 71: Australian Employment by Industry
+**Domain:** Economics
+**Source:** ABS Labour Force — https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia
+**Format:** CSV
+**Rows:** 300K+ (industry employment records)
+**Target:** Employment count by sector
+**ML Tasks:** Time series forecasting, regression, classification
+**Citation:** ABS. Labour Force, Australia, Detailed (cat. 6291.0.55.003).
+**Download:** https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia
+
+---
+
+## DATASET 72: Australian Education — NAPLAN
+**Domain:** Education
+**Source:** ACARA — https://www.acara.edu.au/assessment/naplan
+**Format:** CSV
+**Rows:** 1M+ (student test records)
+**Target:** NAPLAN score
+**ML Tasks:** Classification, regression, clustering
+**Citation:** ACARA. NAPLAN National Report.
+**Download:** https://www.acara.edu.au/assessment/naplan
+
+---
+
+## DATASET 73: Australian Medicare Statistics
+**Domain:** Health
+**Source:** Australian Department of Health — https://www.health.gov.au/resources/medicare-statistics
+**Format:** CSV
+**Rows:** 1M+ (service records)
+**Target:** Service volume / benefit paid
+**ML Tasks:** Time series forecasting, regression, clustering
+**Citation:** Department of Health. Medicare statistics.
+**Download:** https://www.health.gov.au/resources/medicare-statistics
+
+---
+
+## DATASET 74: Australian Coastal Sea Levels
+**Domain:** Oceanography
+**Source:** BOM / National Tidal Centre — http://www.bom.gov.au/oceanography/projects/ntc/index.shtml
+**Format:** CSV
+**Rows:** 5M+ (hourly sea level records)
+**Target:** Sea level height
+**ML Tasks:** Time series forecasting, anomaly detection, regression
+**Citation:** BOM National Tidal Centre. Sea level monitoring.
+**Download:** http://www.bom.gov.au/oceanography/projects/ntc/index.shtml
+
+---
+
+## DATASET 75: Australian Building Approvals
+**Domain:** Housing
+**Source:** ABS Building Approvals — https://www.abs.gov.au/statistics/industry/building-and-construction/building-approvals-australia
+**Format:** CSV
+**Rows:** 200K+ (approval records)
+**Target:** Number of dwelling units approved
+**ML Tasks:** Time series forecasting, regression, classification
+**Citation:** ABS. Building Approvals, Australia (cat. 8731.0).
+**Download:** https://www.abs.gov.au/statistics/industry/building-and-construction/building-approvals-australia
+
+---
+
+## DATASET 76: Australian Solar Radiation
+**Domain:** Energy
+**Source:** BOM / ARENA — http://www.bom.gov.au/climate/data/
+**Format:** CSV
+**Rows:** 500K+ (daily solar exposure records)
+**Target:** Solar irradiance (MJ/m²)
+**ML Tasks:** Time series forecasting, regression, classification
+**Citation:** BOM Climate Data Online. Solar exposure.
+**Download:** http://www.bom.gov.au/climate/data/
+
+---
+
+## DATASET 77: Australian Bushfire History
+**Domain:** Climate
+**Source:** data.gov.au / BNHCRC — https://data.gov.au/
+**Format:** CSV / GeoJSON
+**Rows:** 100K+ (fire records)
+**Target:** Fire severity / ignition risk
+**ML Tasks:** Classification, time series forecasting, anomaly detection
+**Citation:** BNHCRC. Bushfire history datasets.
+**Download:** https://data.gov.au/ (search "fire history")
+
+---
+
+## DATASET 78: Australian Broadband Performance
+**Domain:** Technology
+**Source:** ACCC MBA — https://www.accc.gov.au/consumers/internet-reports/measuring-broadband-australia
+**Format:** CSV
+**Rows:** 2M+ (speed test records)
+**Target:** Download/upload speed
+**ML Tasks:** Classification, regression, anomaly detection
+**Citation:** ACCC. Measuring Broadband Australia reports.
+**Download:** https://www.accc.gov.au/consumers/internet-reports/measuring-broadband-australia
+
+---
+
+## DATASET 79: Australian Biosecurity — Plant Imports
+**Domain:** Agriculture
+**Source:** DAFF — https://www.agriculture.gov.au/biosecurity-trade/import
+**Format:** CSV
+**Rows:** 200K+ (import records)
+**Target:** Biosecurity risk level
+**ML Tasks:** Classification, time series forecasting, anomaly detection
+**Citation:** DAFF. Biosecurity import conditions.
+**Download:** https://www.agriculture.gov.au/biosecurity-trade/import
+
+---
+
+## DATASET 80: Australian Construction Industry
+**Domain:** Economics
+**Source:** ABS Construction Work Done — https://www.abs.gov.au/statistics/industry/building-and-construction/construction-work-done-australia
+**Format:** CSV
+**Rows:** 100K+ (quarterly records)
+**Target:** Construction value
+**ML Tasks:** Time series forecasting, regression, classification
+**Citation:** ABS. Construction Work Done, Australia (cat. 8755.0).
+**Download:** https://www.abs.gov.au/statistics/industry/building-and-construction/construction-work-done-australia
+
+---
+
+## MASTER TABLE (80 Datasets)
+
+| # | Dataset | Domain | Rows | ML Task | Format | Source |
+|---|---------|--------|:----:|---------|--------|--------|
+| 1 | Heart Disease | Medicine | 303 | Classification | CSV | UCI |
+| 2 | Gene Expression Cancer | Cancer/Genomics | 801 | Classification | CSV | UCI |
+| 3 | Earth Surface Temperature | Climate Science | 8.5M | Time Series | CSV | Kaggle |
+| 4 | Wine Quality | Chemistry | 4,898 | Regression | CSV | UCI |
+| 5 | Mushroom Classification | Mycology | 8,124 | Classification | CSV | UCI |
+| 6 | Epileptic Seizure | Neuroscience | 11,500 | Classification | CSV | UCI |
+| 7 | Dengue Cases | Infectious Diseases | 1,456 | Regression | CSV | DrivenData |
+| 8 | Breast Cancer | Cancer | 569 | Classification | CSV | UCI |
+| 9 | E. coli Proteins | Cell Biology | 336 | Classification | CSV | UCI |
+| 10 | Handwritten Digits | Computer Vision | 7,400 | Classification | CSV | UCI |
+| 11 | Adult Census Income | Sociology | 48,842 | Classification | CSV | UCI |
+| 12 | Drug Reviews | Pharmacology | 215,063 | NLP | TSV | UCI |
+| 13 | Human Activity | Biophysics | 10,299 | Classification | CSV | UCI |
+| 14 | Forest Cover Type | Ecology | 581,012 | Classification | CSV | UCI |
+| 15 | Protein Structure | Biochemistry | 45,730 | Regression | CSV | UCI |
+| 16 | Cyberbullying | Psychology | 47,000 | NLP | CSV | Kaggle |
+| 17 | Diabetic Retinopathy | Medicine | 35,126 | Image Classif | Images | Kaggle |
+| 18 | Australian Tourism | Sociology/Econ | 10,000+ | Forecasting | CSV | data.gov.au |
+| 19 | Beachwatch Water Quality | Oceanography | 50,000+ | Classification | CSV | data.nsw.gov.au |
+| 20 | DNA Gene Sequences | Genomics | 10K+ | Classification | CSV | Kaggle |
+| 21 | Beijing Air Quality | Environmental Eng | 43,824 | Regression | CSV | UCI |
+| 22 | DNA Methylation | Epigenetics/Cancer | 96 samples | Classification | CSV | NCBI |
+| 23 | EEG Brainwave | Neurology | 14,980 | Classification | CSV | UCI |
+| 24 | Food Nutrition | Food Chemistry | 7,800+ | Classification | CSV | USDA |
+| 25 | Chest X-Ray | Radiology | 5,863 | Image Classif | Images | Kaggle |
+| 26 | Diabetes Readmission | Geriatrics | 101,766 | Classification | CSV | UCI |
+| 27 | Species Distribution | Ecology | 1M+ | Classification | CSV | GBIF |
+| 28 | Liver Disease | Gastroenterology | 583 | Classification | CSV | UCI |
+| 29 | Crop Yields | Agriculture | 80,000+ | Regression | CSV | OWID |
+| 30 | Gene Therapy Vectors | Gene Therapy | 5,000+ | Regression | CSV | AddGene |
+| 31 | Forest Fires | Forestry | 517 | Regression | CSV | UCI |
+| 32 | Chronic Kidney Disease | Nephrology | 400 | Classification | CSV | UCI |
+| 33 | Dermatology | Dermatology | 366 | Classification | CSV | UCI |
+| 34 | Uterine Cancer | Oncology | 350 | Classification | CSV | UCI |
+| 35 | Water Potability | Freshwater Ecology | 3,276 | Classification | CSV | Kaggle |
+| 36 | Fitbit Athlete Activity | Sports Nutrition | 33,000 | Regression | CSV | Kaggle |
+| 37 | MIMIC-III ICU | Emergency Medicine | 53,423 | Classification | CSV | PhysioNet |
+| 38 | Thyroid Disease | Endocrinology | 7,200 | Classification | CSV | UCI |
+| 39 | Foodborne Illness | Food Safety | 50,000 | Classification | CSV | CDC |
+| 40 | Australian Rainfall | Climatology | 100K+ | Forecasting | CSV | BOM |
+| 41 | Wine Quality (Vinho Verde) | Oenology | 4,898 | Regression | CSV | UCI |
+| 42 | Cervical Cancer Risk | Oncology | 858 | Classification | CSV | UCI |
+| 43 | Kangaroo Tracking | Wildlife | 50K+ | Classification | CSV | ALA |
+| 44 | Student Performance | Education | 1,044 | Regression | CSV | UCI |
+| 45 | Carbon Flux (OzFlux) | Climate | 500K+ | Regression | CSV | OzFlux |
+| 46 | NHANES Health Survey | Public Health | 50K+ | Regression | CSV | CDC |
+| 47 | Fossil Occurrences | Palaeontology | 1M+ | Classification | CSV | PBDB |
+| 48 | Route Optimization | Logistics | 100K+ | Regression | CSV | Kaggle |
+| 49 | Lupus Gene Expression | Immunology | 1,200 | Classification | CSV | GEO |
+| 50 | PISA Global Scores | Education | 600K+ | Regression | CSV | OECD |
+| 51 | Soil Moisture (Aus) | Soil Sciences | 100K+ | Regression | CSV | TERN |
+| 52 | Tumour Immunotherapy | Immunology | 2,000 | Classification | CSV | GEO |
+| 53 | Land Use Change (NSW) | Land Use Planning | 500K+ | Classification | CSV | SEED |
+| 54 | Crop Pest Infestation | Agriculture | 10K+ | Classification | CSV | DAFF |
+| 55 | Antibiotic Resistance (AMR) | Microbial Genetics | 500K+ | Classification | CSV | NCBI |
+| 56 | ACL Injury Prediction | Sports Medicine | 5,000+ | Classification | CSV | Kaggle |
+| 57 | Protein Sequence (Bioinfo) | Bioinformatics | 15K+ | Classification | CSV | UCI |
+| 58 | Hospital Readmission | Health Informatics | 101K+ | Classification | CSV | UCI |
+| 59 | Bushfire Risk (Aus) | Climate Adaptation | 50K+ | Classification | CSV | BNHCRC |
+| 60 | Depression Detection (NLP) | Mental Health / NLP | 40K+ | NLP | CSV | Kaggle |
+| 61 | Australian Electricity Generation | Energy | 500K+ | Forecasting | CSV | AEMO |
+| 62 | Australian Housing Prices | Housing | 100K+ | Regression | CSV | ABS |
+| 63 | Road Traffic Accidents | Transport | 1M+ | Classification | CSV | BITRE |
+| 64 | Australian Crime Statistics | Socioeconomic | 200K+ | Forecasting | CSV | ABS |
+| 65 | Agricultural Commodity Prices | Agriculture | 100K+ | Forecasting | CSV | ABARES |
+| 66 | Water Storage Levels | Water Resources | 1M+ | Forecasting | CSV | BOM |
+| 67 | Hospital Admissions | Health | 500K+ | Regression | CSV | AIHW |
+| 68 | ASX Stock Market | Finance | 5M+ | Forecasting | CSV | Yahoo Finance |
+| 69 | Australian Immigration | Demographics | 200K+ | Forecasting | CSV | ABS |
+| 70 | Population by LGA | Demographics | 500K+ | Forecasting | CSV | ABS |
+| 71 | Employment by Industry | Economics | 300K+ | Forecasting | CSV | ABS |
+| 72 | NAPLAN Scores | Education | 1M+ | Classification | CSV | ACARA |
+| 73 | Medicare Statistics | Health | 1M+ | Forecasting | CSV | Health Dept |
+| 74 | Coastal Sea Levels | Oceanography | 5M+ | Forecasting | CSV | BOM |
+| 75 | Building Approvals | Housing | 200K+ | Forecasting | CSV | ABS |
+| 76 | Solar Radiation | Energy | 500K+ | Forecasting | CSV | BOM |
+| 77 | Bushfire History | Climate | 100K+ | Classification | CSV | BNHCRC |
+| 78 | Broadband Performance | Technology | 2M+ | Regression | CSV | ACCC |
+| 79 | Biosecurity Plant Imports | Agriculture | 200K+ | Classification | CSV | DAFF |
+| 80 | Construction Industry | Economics | 100K+ | Forecasting | CSV | ABS |

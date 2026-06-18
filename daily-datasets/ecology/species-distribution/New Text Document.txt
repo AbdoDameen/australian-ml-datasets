@@ -1,0 +1,145 @@
+Occurrence dataset Registered February 17, 2011
+BirdLife Australia, Birdata
+Published by BirdLife Australia
+
+22,993,552 occurrences 226 citations
+Dataset
+ 
+Metrics
+ 
+Activity
+ 
+ Download
+ 
+ Home page
+22,993,552 occurrences 226 citations
+Dataset
+ 
+Metrics
+ 
+Activity
+ 
+ Download
+ 
+ Home page
+Birdata is BirdLife Australia?s online national bird monitoring platform. Compiled from the combined efforts of professional researchers and citizen scientists, Birdata is Australia?s longest running digital database for bird sightings. It tells us where our birds are living, and how their populations are changing over time. It contains nationwide expert and citizen science surveys, as well as targeted threatened species surveys critical to BirdLife's conservation programs. The information held … More
+
+Publication date April 20, 2026
+Metadata last modified May 21, 2026
+Hosted by Atlas of Living Australia
+Licence CC BY-NC 4.0
+How to cite DOI10.15468/dchsnk
+22,993,552
+Occurrences
+100%
+With taxon match
+99.9%
+With coordinates
+99.7%
+With year
+22,992,988 georeferenced records
++
+-
+Generated 3 hours ago © OpenStreetMap contributors, © OpenMapTiles, GBIF.
+Explore area    
+Any year 1998 - 2025 
+Events
+Event ID	Event date	Sampling protocol	Occurrence count
+1837040
+2014 Jul 07 - 2020 Jul 16
+Bird list
+276 (0 absent)
+10299594
+2019 Jul 01 - 2025 Aug 03
+Bird list
+183 (0 absent)
+2577812
+2018 Oct 27 - 2018 Oct 28
+Bird list
+182 (0 absent)
+1492892
+2013 Aug 31
+Incidental search
+170 (0 absent)
+1836816
+2017 May 12 - 2018 Jun 12
+Bird list
+167 (0 absent)
+10056913
+2024 Sep 07
+Bird list
+164 (0 absent)
+10263076
+2025 Mar 29 - 2025 Mar 30
+Bird list
+164 (0 absent)
+1438561
+2013 Nov 17
+Incidental search
+164 (0 absent)
+1064301
+2007 Jan 15 - 2007 Feb 20
+Incidental search
+160 (0 absent)
+1438560
+2010 Dec 04
+Incidental search
+160 (0 absent)
+Next
+Description
+Methodology
+Additional info
+Contacts
+Data description
+GBIF registration
+Citation
+Description
+Birdata is BirdLife Australia?s online national bird monitoring platform. Compiled from the combined efforts of professional researchers and citizen scientists, Birdata is Australia?s longest running digital database for bird sightings. It tells us where our birds are living, and how their populations are changing over time. It contains nationwide expert and citizen science surveys, as well as targeted threatened species surveys critical to BirdLife's conservation programs.
+
+The information held in Birdata is also used more widely for publications, legislation and academic research throughout Australia. Each time a Birdata survey is submitted, it is added into our database and directly contributes not only to BirdLife Australia?s on-the-ground conservation work, but to broader conservation planning and land management.?Birdata records are shared every week with community groups, corporations, universities and government bodies to inform decision making and research, to give Australia?s birds the best possible future!
+
+Australia?s largest and longest-running wildlife database, Birdata?s impact on conservation in our country is hard to over-estimate. Even more importantly, with thousands of citizen scientists contributing to it every year, it is a live and growing dataset. We achieve this because Birdata is not just a database, but also, a simple and fun survey tool for citizen scientists, targeted at collecting the data we need to save our most threatened species and keep all of Australia alive with our beautiful common birds. In practice, this means Birdata has been used to:
+
+- Elevate the conservation status of the Plains-wanderer, Australasian Bittern, Eastern Curlew and Australian Painted Snipe (among other species) in recent years. - Inform the comprehensive Action Plan for Australia?s Birds. - Inform the declaration of over 300 Key Biodiversity Areas. - Direct private and government protected area networks. - Sound the alarm bell for declining species like the Mallee Striated Grasswren. - Influence local fire management. - Inform government and NGO conservation actions.
+The Atlas of Living Australia holds non?Restricted Access species data and a subset of Restricted Access species data from Birdata. To obtain extracts that include restricted species, please contact BirdLife Australia directly. As BirdLife data is provided under a non?commercial licence, consultants must also liaise with BirdLife to arrange access to full?resolution records for any commercial use.
+
+You can submit information to this important environmental database by conducting a survey in the Birdata app or on our website: https://birdata.birdlife.org.au/
+
+Methodology
+Additional info
+Please note that details of records of sensitive species have been removed from this data set. Visit https://birdata.birdlife.org.au/request-data to request data directly from BirdLife Australia.
+
+Contacts
+BirdLife Australia
+Originator Metadata author
+Atlas of Living Australia
+Distributor
+CSIRO Ecosystems Services
+Canberra 2601
+ACT
+Australia
+info@ala.org.au
+BirdLife
+Administrative point of contact
+editor
+birdata@birdlife.org.au
+Data description
+Metadata language English
+Data language English
+GBIF registration
+Registration date February 17, 2011
+Metadata last modified May 21, 2026
+Publication date April 20, 2026
+Hosted by Atlas of Living Australia
+Installation ALA.org.au
+Endpoints https://dwca-exports.ala.org.au/dr359.zip (Darwin Core Archive)
+Preferred identifier DOI10.15468/dchsnk
+Alternative identifiers https://collections.ala.org.au/public/show/dr359 http://collections.ala.org.au/public/show/dr359
+See details in the GBIF Registry
+
+Citation
+BirdLife Australia (2026). BirdLife Australia, Birdata. Occurrence dataset https://doi.org/10.15468/dchsnk accessed via GBIF.org on 2026-05-25.
+What is GBIF? API FAQ Newsletter Privacy Terms and agreements How to cite? Code of Conduct Acknowledgements
+Contact GBIF Secretariat Universitetsparken 15 DK-2100 Copenhagen Ø Denmark
+ GBIF is a Global Core Biodata Resource
+   

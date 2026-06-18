@@ -1,0 +1,13 @@
+{
+  "id": 69,
+  "dataset": "Australian Immigration Statistics",
+  "domain": "Demographics",
+  "source": "ABS / Home Affairs",
+  "url": "https://www.abs.gov.au/statistics/people/population/migration-australia",
+  "format": "CSV",
+  "rows_estimate": "200K+",
+  "ml_tasks": ["Time Series Forecasting", "Classification", "Regression"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Immigration data for Australia including visa categories, source countries, settlement patterns, and NOM."
+}

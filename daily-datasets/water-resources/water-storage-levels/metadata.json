@@ -1,0 +1,13 @@
+{
+  "id": 66,
+  "dataset": "Australian Water Storage Levels",
+  "domain": "Water Resources",
+  "source": "BOM Water Data Online",
+  "url": "http://www.bom.gov.au/water/data/",
+  "format": "CSV",
+  "rows_estimate": "1M+",
+  "ml_tasks": ["Time Series Forecasting", "Regression", "Anomaly Detection"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Daily water storage levels for major Australian dams and reservoirs including volume and capacity data."
+}

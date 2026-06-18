@@ -1,0 +1,12 @@
+{
+  "dataset_id": 39,
+  "name": "Foodborne Illness (CDC)",
+  "folder": "food-safety/foodborne-illness",
+  "domain": "Food-Safety",
+  "ml_task": "Classification",
+  "source": "CDC",
+  "description": "50K outbreak records",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

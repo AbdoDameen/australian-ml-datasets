@@ -1,0 +1,12 @@
+{
+  "dataset_id": 47,
+  "name": "Fossil Occurrences (PBDB)",
+  "folder": "palaeontology/fossil-occurrences",
+  "domain": "Palaeontology",
+  "ml_task": "Classification",
+  "source": "PBDB",
+  "description": "1M+ fossil records",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

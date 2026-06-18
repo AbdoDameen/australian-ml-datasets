@@ -1,0 +1,13 @@
+{
+  "id": 65,
+  "dataset": "Australian Agricultural Commodity Prices",
+  "domain": "Agriculture",
+  "source": "ABARES",
+  "url": "https://www.agriculture.gov.au/abares/data",
+  "format": "CSV",
+  "rows_estimate": "100K+",
+  "ml_tasks": ["Time Series Forecasting", "Regression", "Anomaly Detection"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Prices for major Australian agricultural commodities including grains, livestock, wool, dairy, and horticulture."
+}

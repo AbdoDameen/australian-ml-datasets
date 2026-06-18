@@ -1,0 +1,13 @@
+{
+  "id": 74,
+  "dataset": "Australian Coastal Sea Levels",
+  "domain": "Oceanography",
+  "source": "BOM / National Tidal Centre",
+  "url": "http://www.bom.gov.au/oceanography/projects/ntc/index.shtml",
+  "format": "CSV",
+  "rows_estimate": "5M+",
+  "ml_tasks": ["Time Series Forecasting", "Anomaly Detection", "Regression"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Hourly sea level measurements and tidal data from tide gauge network around the Australian coastline."
+}

@@ -1,0 +1,13 @@
+{
+  "id": 72,
+  "dataset": "Australian Education - NAPLAN",
+  "domain": "Education",
+  "source": "ACARA",
+  "url": "https://www.acara.edu.au/assessment/naplan",
+  "format": "CSV",
+  "rows_estimate": "1M+",
+  "ml_tasks": ["Classification", "Regression", "Clustering"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "NAPLAN test results for Australian students across literacy and numeracy domains in Years 3, 5, 7, and 9."
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_id": 51,
+  "name": "Soil Moisture (TERN)",
+  "folder": "soil-sciences/soil-moisture",
+  "domain": "Soil-Sciences",
+  "ml_task": "Regression",
+  "source": "TERN",
+  "description": "100K+ soil moisture readings",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

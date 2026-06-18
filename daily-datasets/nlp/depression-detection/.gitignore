@@ -1,0 +1,4 @@
+# Raw data too large for GitHub (>100 MB) — keep locally
+raw/
+processed/
+features/

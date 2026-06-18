@@ -1,0 +1,12 @@
+{
+  "dataset_id": 19,
+  "name": "Beachwatch Water Quality",
+  "folder": "oceanography/beachwatch-water-quality",
+  "domain": "Oceanography",
+  "ml_task": "Classification",
+  "source": "NSW Gov",
+  "description": "50K+ water samples",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

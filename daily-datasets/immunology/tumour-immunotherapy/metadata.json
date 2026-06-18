@@ -1,0 +1,12 @@
+{
+  "dataset_id": 52,
+  "name": "Tumour Immunotherapy",
+  "folder": "immunology/tumour-immunotherapy",
+  "domain": "Immunology",
+  "ml_task": "Classification",
+  "source": "NCBI GEO",
+  "description": "2,000+ tumour samples",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

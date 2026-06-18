@@ -1,0 +1,13 @@
+{
+  "id": 61,
+  "dataset": "Australian Electricity Generation",
+  "domain": "Energy",
+  "source": "AEMO",
+  "url": "https://aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem",
+  "format": "CSV",
+  "rows_estimate": "500K+",
+  "ml_tasks": ["Time Series Forecasting", "Anomaly Detection", "Regression"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Electricity generation data by fuel type from the Australian NEM at 5/30 min intervals."
+}

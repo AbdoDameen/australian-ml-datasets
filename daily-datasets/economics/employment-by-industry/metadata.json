@@ -1,0 +1,13 @@
+{
+  "id": 71,
+  "dataset": "Australian Employment by Industry",
+  "domain": "Economics",
+  "source": "ABS Labour Force",
+  "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia",
+  "format": "CSV",
+  "rows_estimate": "300K+",
+  "ml_tasks": ["Time Series Forecasting", "Regression", "Classification"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Employment by industry sector across Australia including full-time, part-time, and regional breakdowns."
+}

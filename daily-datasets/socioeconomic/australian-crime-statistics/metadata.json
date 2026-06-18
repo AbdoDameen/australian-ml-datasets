@@ -1,0 +1,13 @@
+{
+  "id": 64,
+  "dataset": "Australian Crime Statistics",
+  "domain": "Socioeconomic",
+  "source": "ABS",
+  "url": "https://www.abs.gov.au/statistics/people/crime-and-justice",
+  "format": "CSV",
+  "rows_estimate": "200K+",
+  "ml_tasks": ["Time Series Forecasting", "Classification", "Clustering"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Recorded crime statistics across Australian states covering offences, victimisation rates, and offender characteristics."
+}

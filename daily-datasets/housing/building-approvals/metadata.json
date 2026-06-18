@@ -1,0 +1,13 @@
+{
+  "id": 75,
+  "dataset": "Australian Building Approvals",
+  "domain": "Housing",
+  "source": "ABS Building Approvals",
+  "url": "https://www.abs.gov.au/statistics/industry/building-and-construction/building-approvals-australia",
+  "format": "CSV",
+  "rows_estimate": "200K+",
+  "ml_tasks": ["Time Series Forecasting", "Regression", "Classification"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Building approvals for residential and non-residential buildings across Australia by type and region."
+}

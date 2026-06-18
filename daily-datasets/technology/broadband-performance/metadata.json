@@ -1,0 +1,13 @@
+{
+  "id": 78,
+  "dataset": "Australian Broadband Performance",
+  "domain": "Technology",
+  "source": "ACCC MBA",
+  "url": "https://www.accc.gov.au/consumers/internet-reports/measuring-broadband-australia",
+  "format": "CSV",
+  "rows_estimate": "2M+",
+  "ml_tasks": ["Classification", "Regression", "Anomaly Detection"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Broadband internet performance measurements from ACCC's MBA program including speeds and latency by ISP."
+}

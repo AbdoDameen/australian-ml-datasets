@@ -1,0 +1,12 @@
+{
+  "dataset_id": 23,
+  "name": "EEG Brainwave (Alcoholism)",
+  "folder": "neurology/eeg-brainwave",
+  "domain": "Neurology",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "14,980 recordings, 122 subjects",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

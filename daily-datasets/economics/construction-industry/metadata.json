@@ -1,0 +1,13 @@
+{
+  "id": 80,
+  "dataset": "Australian Construction Industry",
+  "domain": "Economics",
+  "source": "ABS Construction Work Done",
+  "url": "https://www.abs.gov.au/statistics/industry/building-and-construction/construction-work-done-australia",
+  "format": "CSV",
+  "rows_estimate": "100K+",
+  "ml_tasks": ["Time Series Forecasting", "Regression", "Classification"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Construction work done across Australia by sector (residential, non-residential, civil) and state."
+}

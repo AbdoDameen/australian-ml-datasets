@@ -1,0 +1,13 @@
+{
+  "id": 63,
+  "dataset": "Australian Road Traffic Accidents",
+  "domain": "Transport",
+  "source": "BITRE / data.gov.au",
+  "url": "https://data.gov.au/dataset/road-crash-data",
+  "format": "CSV",
+  "rows_estimate": "1M+",
+  "ml_tasks": ["Classification", "Clustering", "Anomaly Detection"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Historical road crash data from Australian states including locations, severity, and contributing factors."
+}

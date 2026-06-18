@@ -1,0 +1,13 @@
+{
+  "id": 67,
+  "dataset": "Australian Hospital Admissions",
+  "domain": "Health",
+  "source": "AIHW",
+  "url": "https://www.aihw.gov.au/reports-data/myhospitals",
+  "format": "CSV",
+  "rows_estimate": "500K+",
+  "ml_tasks": ["Time Series Forecasting", "Regression", "Classification"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Hospital admissions data across Australian hospitals including diagnoses, procedures, and length of stay."
+}

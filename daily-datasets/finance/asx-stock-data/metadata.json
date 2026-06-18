@@ -1,0 +1,13 @@
+{
+  "id": 68,
+  "dataset": "Australian Stock Market (ASX)",
+  "domain": "Finance",
+  "source": "Yahoo Finance / ASX",
+  "url": "https://au.finance.yahoo.com/",
+  "format": "CSV",
+  "rows_estimate": "5M+",
+  "ml_tasks": ["Time Series Forecasting", "Regression", "Anomaly Detection"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Historical stock price data for ASX-listed companies including OHLC prices and trading volumes."
+}

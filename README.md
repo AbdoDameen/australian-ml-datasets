@@ -1,6 +1,6 @@
 # Australian ML Datasets
 
-**60 datasets** across **45 domains**, all in one place. Each has a `raw/` folder with source data, ready for processing.
+**80 datasets** across **50+ domains**, all in one place. Each has a `raw/` folder with source data, ready for processing.
 
 📁 **`daily-datasets/`** — browse them all here.
 

@@ -1,0 +1,12 @@
+{
+  "dataset_id": 48,
+  "name": "Route Optimization",
+  "folder": "logistics/route-optimization",
+  "domain": "Logistics",
+  "ml_task": "Regression",
+  "source": "Kaggle",
+  "description": "100K+ delivery routes",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

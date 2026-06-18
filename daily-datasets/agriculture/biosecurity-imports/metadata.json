@@ -1,0 +1,13 @@
+{
+  "id": 79,
+  "dataset": "Australian Biosecurity - Plant Imports",
+  "domain": "Agriculture",
+  "source": "DAFF",
+  "url": "https://www.agriculture.gov.au/biosecurity-trade/import",
+  "format": "CSV",
+  "rows_estimate": "200K+",
+  "ml_tasks": ["Classification", "Time Series Forecasting", "Anomaly Detection"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Plant import data for biosecurity including volumes, origins, quarantine outcomes, and pest interceptions."
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_id": 58,
+  "name": "Hospital Readmission",
+  "folder": "health-informatics/hospital-readmission",
+  "domain": "Health-Informatics",
+  "ml_task": "Classification",
+  "source": "UCI",
+  "description": "101K+ hospital records",
+  "status": "\u2b1c EMPTY",
+  "has_raw_data": false,
+  "has_pipeline": false
+}

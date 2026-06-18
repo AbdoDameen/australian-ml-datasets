@@ -1,0 +1,13 @@
+{
+  "id": 77,
+  "dataset": "Australian Bushfire History",
+  "domain": "Climate",
+  "source": "data.gov.au / BNHCRC",
+  "url": "https://data.gov.au/",
+  "format": "CSV / GeoJSON",
+  "rows_estimate": "100K+",
+  "ml_tasks": ["Classification", "Time Series Forecasting", "Anomaly Detection"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Historical bushfire records including fire perimeters, ignition points, severity, and area burned across Australia."
+}

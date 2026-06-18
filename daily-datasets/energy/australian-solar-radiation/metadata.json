@@ -1,0 +1,13 @@
+{
+  "id": 76,
+  "dataset": "Australian Solar Radiation",
+  "domain": "Energy",
+  "source": "BOM / ARENA",
+  "url": "http://www.bom.gov.au/climate/data/",
+  "format": "CSV",
+  "rows_estimate": "500K+",
+  "ml_tasks": ["Time Series Forecasting", "Regression", "Classification"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Solar radiation and irradiance data including GHI, DNI, DHI across Australian locations."
+}

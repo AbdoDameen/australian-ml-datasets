@@ -1,0 +1,13 @@
+{
+  "id": 73,
+  "dataset": "Australian Medicare Statistics",
+  "domain": "Health",
+  "source": "Australian Department of Health",
+  "url": "https://www.health.gov.au/resources/medicare-statistics",
+  "format": "CSV",
+  "rows_estimate": "1M+",
+  "ml_tasks": ["Time Series Forecasting", "Regression", "Clustering"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Medicare benefits statistics including MBS services and payments by item, provider, and region."
+}

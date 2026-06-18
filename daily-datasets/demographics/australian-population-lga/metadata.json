@@ -1,0 +1,13 @@
+{
+  "id": 70,
+  "dataset": "Australian Population by LGA",
+  "domain": "Demographics",
+  "source": "ABS ERP",
+  "url": "https://www.abs.gov.au/statistics/people/population/regional-population",
+  "format": "CSV",
+  "rows_estimate": "500K+",
+  "ml_tasks": ["Time Series Forecasting", "Regression", "Clustering"],
+  "created": "2025-01-01",
+  "last_updated": "2025-06-01",
+  "description": "Estimated Resident Population by Local Government Area across Australia with age and sex breakdowns."
+}
