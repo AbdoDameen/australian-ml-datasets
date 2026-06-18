@@ -1,0 +1,4 @@
+# Raw data > 50MB — keep locally
+raw/
+processed/
+features/
