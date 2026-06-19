@@ -1,0 +1,41 @@
+{
+  "dataset_name": "adult-census-income",
+  "dataset_number": 63,
+  "domain": "sociology",
+  "ml_task": "Binary Classification",
+  "source": "UCI ML Repository \u2014 Adult Census Income",
+  "source_url": "https://archive.ics.uci.edu/dataset/2/adult",
+  "description": "Census income data from the 1994 US Census. Predict whether income exceeds $50K/yr based on demographic and employment features.",
+  "processing_date": "2026-06-19",
+  "total_rows": 48842,
+  "total_columns_original": 15,
+  "features_original": 14,
+  "features_engineered": 19,
+  "class_column": "income (>50K vs <=50K)",
+  "class_balance": {
+    "<=50K": 37109,
+    ">50K": 11681
+  },
+  "missing_values_before": {
+    "workclass": 2799,
+    "occupation": 2809,
+    "native_country": 857
+  },
+  "missing_values_after": 0,
+  "duplicates_removed": 52,
+  "transformations": [
+    "Loaded UCI .data files (adult.data + adult.test)",
+    "Standardized column names, stripped whitespace",
+    "? \u2192 NaN \u2192 mode imputed for categoricals (workclass, occupation, native_country)",
+    "Removed 24 duplicate rows",
+    "Capped outliers at 1.5\u00d7 IQR on capital_gain, capital_loss, hours_per_week, fnlwgt",
+    "Feature engineering: age_group, has_advanced_degree, capital_net, has_capital_gain/loss,",
+    "  hours_category, is_overtime, is_government, is_self_employed, is_married,",
+    "  is_us_born, is_husband, is_male, is_senior",
+    "One-hot encoded: workclass, education, marital_status, occupation, relationship,",
+    "  race, native_country, age_group, hours_category (60+ features total)",
+    "80/20 stratified train/test split (preserved class balance)",
+    "StandardScaler (fit on train, transform test)"
+  ],
+  "licensing": "UCI ML Repository \u2014 Public Domain"
+}
