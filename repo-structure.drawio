@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="30.2.4">
+  <diagram name="Page-1">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ===== HEADER ===== -->
+        <mxCell id="hdr" value="🇦🇺 Australian ML Datasets — Repo Structure" style="text;html=1;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="10" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr-sub" value="80 datasets · 50+ domains  |  github.com/AbdoDameen/australian-ml-datasets" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#666666;strokeColor=none;fillColor=none;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="50" width="1200" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- ===== SECTION: Data Pipeline ===== -->
+        <mxCell id="pipe-box" value="Data Pipeline" style="swimlane;startSize=28;fillColor=#f5f5f5;strokeColor=#999999;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="30" y="90" width="1140" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Pipeline nodes -->
+        <mxCell id="raw" value="📥 Download" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="pipe-box">
+          <mxGeometry x="30" y="35" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="raw-dir" value="raw/" style="text;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#666666;strokeColor=none;fillColor=none;" vertex="1" parent="pipe-box">
+          <mxGeometry x="30" y="80" width="140" height="16" as="geometry" />
+        </mxCell>
+
+        <mxCell id="proc" value="⚙️ Process" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="pipe-box">
+          <mxGeometry x="300" y="35" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-dir" value="processed/" style="text;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#666666;strokeColor=none;fillColor=none;" vertex="1" parent="pipe-box">
+          <mxGeometry x="300" y="80" width="140" height="16" as="geometry" />
+        </mxCell>
+
+        <mxCell id="feat" value="🔧 Features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="pipe-box">
+          <mxGeometry x="570" y="35" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="feat-dir" value="features/" style="text;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#666666;strokeColor=none;fillColor=none;" vertex="1" parent="pipe-box">
+          <mxGeometry x="570" y="80" width="140" height="16" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ml" value="🤖 ML Ready" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="pipe-box">
+          <mxGeometry x="840" y="35" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ml-dir" value="(training/inference)" style="text;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#666666;strokeColor=none;fillColor=none;" vertex="1" parent="pipe-box">
+          <mxGeometry x="840" y="80" width="140" height="16" as="geometry" />
+        </mxCell>
+
+        <!-- Pipeline arrows -->
+        <mxCell id="a1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="pipe-box" source="raw" target="proc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="pipe-box" source="proc" target="feat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="pipe-box" source="feat" target="ml">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ===== SECTION: Domain Catalog ===== -->
+        <mxCell id="cat-box" value="Daily Datasets — Domain Catalog" style="swimlane;startSize=28;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="30" y="210" width="1140" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- Category group: Health & Medicine -->
+        <mxCell id="cat-health" value="🏥 Health &amp; Medicine" style="swimlane;startSize=20;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=12;" vertex="1" parent="cat-box">
+          <mxGeometry x="15" y="30" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="h1" value="cancer · dermatology · gastroenterology&#xa;immunology · infectious-diseases · medicine&#xa;nephrology · neurology · oncology&#xa;ophthalmology · pharmacology · radiology&#xa;sports-medicine · emergency-medicine&#xa;endocrinology · geriatrics · health" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;strokeColor=none;fillColor=none;spacingLeft=8;spacingTop=6;" vertex="1" parent="cat-health">
+          <mxGeometry x="0" y="30" width="260" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Category group: Life Sciences -->
+        <mxCell id="cat-life" value="🧬 Life Sciences" style="swimlane;startSize=20;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;" vertex="1" parent="cat-box">
+          <mxGeometry x="295" y="30" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" value="biochemistry · bioinformatics · biology&#xa;biophysics · epigenetics · gene-therapy&#xa;genomics · microbiology · neuroscience&#xa;nutrition · oenology · psychology" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;strokeColor=none;fillColor=none;spacingLeft=8;spacingTop=6;" vertex="1" parent="cat-life">
+          <mxGeometry x="0" y="30" width="260" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Category group: Environment & Climate -->
+        <mxCell id="cat-env" value="🌍 Environment &amp; Climate" style="swimlane;startSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=12;" vertex="1" parent="cat-box">
+          <mxGeometry x="575" y="30" width="255" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="climate · climatology · ecology&#xa;environmental · forestry · geology&#xa;oceanography · palaeontology&#xa;soil-sciences · water-resources&#xa;weather · wildlife" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;strokeColor=none;fillColor=none;spacingLeft=8;spacingTop=6;" vertex="1" parent="cat-env">
+          <mxGeometry x="0" y="30" width="255" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Category group: Agriculture & Earth -->
+        <mxCell id="cat-agri" value="🌾 Agriculture &amp; Earth" style="swimlane;startSize=20;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;" vertex="1" parent="cat-box">
+          <mxGeometry x="850" y="30" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="a2c" value="agriculture · energy · food-safety&#xa;forestry · freshwater-ecology&#xa;geology · soil-sciences&#xa;weather · wildlife" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;strokeColor=none;fillColor=none;spacingLeft=8;spacingTop=6;" vertex="1" parent="cat-agri">
+          <mxGeometry x="0" y="30" width="260" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Category group: Social & Economics -->
+        <mxCell id="cat-soc" value="📊 Social &amp; Economics" style="swimlane;startSize=20;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=12;" vertex="1" parent="cat-box">
+          <mxGeometry x="15" y="160" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" value="demographics · economics · education&#xa;finance · housing · psychology&#xa;public-health · socioeconomic · sociology" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;strokeColor=none;fillColor=none;spacingLeft=8;spacingTop=6;" vertex="1" parent="cat-soc">
+          <mxGeometry x="0" y="30" width="260" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Category group: Technology & Applied -->
+        <mxCell id="cat-tech" value="💻 Technology &amp; Applied" style="swimlane;startSize=20;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;" vertex="1" parent="cat-box">
+          <mxGeometry x="295" y="160" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="computer-vision · gaming · logistics&#xa;nlp · resources · technology&#xa;tourism · transport" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;strokeColor=none;fillColor=none;spacingLeft=8;spacingTop=6;" vertex="1" parent="cat-tech">
+          <mxGeometry x="0" y="30" width="260" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Category group: Other -->
+        <mxCell id="cat-other" value="🔬 Other Sciences" style="swimlane;startSize=20;fillColor=#f5f5f5;strokeColor=#999999;fontStyle=1;fontSize=12;" vertex="1" parent="cat-box">
+          <mxGeometry x="575" y="160" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="o1" value="chemistry · computer-vision&#xa;demographics · education&#xa;gaming · housing&#xa;nutrition · nlp" style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;strokeColor=none;fillColor=none;spacingLeft=8;spacingTop=6;" vertex="1" parent="cat-other">
+          <mxGeometry x="0" y="30" width="260" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- ===== SECTION: Tools & Infrastructure ===== -->
+        <mxCell id="tool-box" value="Tools &amp; Infrastructure" style="swimlane;startSize=28;fillColor=#f5f5f5;strokeColor=#999999;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="30" y="510" width="1140" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t-notebook" value="📓 Notebooks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="tool-box">
+          <mxGeometry x="30" y="35" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t-nb-dir" value="notebooks/preprocessing/" style="text;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#666666;strokeColor=none;fillColor=none;" vertex="1" parent="tool-box">
+          <mxGeometry x="30" y="80" width="150" height="16" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t-scripts" value="📜 Scripts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="tool-box">
+          <mxGeometry x="260" y="35" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t-sc-dir" value="scripts/download_data_gov_au.py" style="text;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#666666;strokeColor=none;fillColor=none;" vertex="1" parent="tool-box">
+          <mxGeometry x="260" y="80" width="150" height="16" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t-scrapers" value="🕷️ Scrapers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="tool-box">
+          <mxGeometry x="490" y="35" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t-sc-dir2" value="scrapers/" style="text;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#666666;strokeColor=none;fillColor=none;" vertex="1" parent="tool-box">
+          <mxGeometry x="490" y="80" width="150" height="16" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t-catalog" value="📋 Catalog" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="tool-box">
+          <mxGeometry x="720" y="35" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t-cat-dir" value="_catalog/20_datasets_catalog.md" style="text;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#666666;strokeColor=none;fillColor=none;" vertex="1" parent="tool-box">
+          <mxGeometry x="720" y="80" width="150" height="16" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t-diagram" value="📐 Drawio Skill" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="tool-box">
+          <mxGeometry x="950" y="35" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="t-dia-dir" value="(diagram generation)" style="text;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#666666;strokeColor=none;fillColor=none;" vertex="1" parent="tool-box">
+          <mxGeometry x="950" y="80" width="150" height="16" as="geometry" />
+        </mxCell>
+
+        <!-- ===== CONNECTIONS between sections ===== -->
+
+        <!-- Domain catalog → Pipeline feeder arrows (top) -->
+        <mxCell id="a-cat-pipe" value="domains feed into pipeline" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="cat-box" target="pipe-box">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="190" />
+              <mxPoint x="600" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

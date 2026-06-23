@@ -33,3 +33,9 @@ Each dataset folder follows the same layout:
 ```
 
 We currently have **raw data downloaded for 20 datasets**, with the remaining 40 ready to download on request.
+
+---
+
+## Repo structure
+
+![Repo structure diagram](repo-structure.drawio.png)
