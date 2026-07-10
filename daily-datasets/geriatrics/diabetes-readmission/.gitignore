@@ -1,0 +1,4 @@
+# Generated data — too large for GitHub (>100 MB per file)
+# Run `python3 prepare_dataset.py` to regenerate
+processed/
+features/
