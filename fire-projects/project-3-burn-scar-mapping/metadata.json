@@ -1,0 +1,19 @@
+{
+  "project": "Satellite Burn Scar Mapping",
+  "source": "Sentinel-2 (Copernicus) / synthetic demo",
+  "created_date": "2026-07-13 12:11:30.027355",
+  "demo_scene_size": "200\u00d7200",
+  "burn_area_hectares": 34.0,
+  "burn_area_percent": 8.5,
+  "severity_breakdown": {
+    "low_pct": 0.4,
+    "moderate_pct": 1.4,
+    "severe_pct": 6.7
+  },
+  "methods": [
+    "NDVI = (NIR - Red) / (NIR + Red)",
+    "Pre-fire NDVI - Post-fire NDVI > threshold = burn scar",
+    "Sentinel-2 L2A (10m resolution, B04 Red + B08 NIR bands)",
+    "For real data: register at Copernicus Data Space, use sentinelhub-py"
+  ]
+}

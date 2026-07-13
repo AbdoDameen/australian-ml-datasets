@@ -1,0 +1,30 @@
+{
+  "project": "Forest Fire Risk Prediction",
+  "source": "ABARES Forest Fire Data 2016-2021",
+  "source_url": "https://www.agriculture.gov.au/abares/forestsaustralia/forest-data-maps-and-tools/spatial-data/forest-fire",
+  "created_date": "2026-07-13 12:09:58.585153",
+  "rows": 36440,
+  "columns": 52,
+  "target_column": "unplanned_fire_2021",
+  "ml_task": "Binary classification \u2014 predict unplanned forest fire in 2020-21 season",
+  "features": [
+    "Tenure type (PRIV, LEASE, NCR, OCL, MUF, ND) \u2014 one-hot encoded",
+    "Forest category (Native forest, Non-forest, Plantation) \u2014 one-hot encoded",
+    "State/territory \u2014 one-hot encoded",
+    "Prior burn count (1-5 years)",
+    "Prior unplanned fire count (years 1-4)",
+    "Prior planned burn count (years 1-4)",
+    "Tenure \u00d7 prior fire interactions"
+  ],
+  "transformations": [
+    "Decoded ALL_FIRE pattern into per-year unplanned/planned indicators",
+    "Dropped non-forest and non-burn-area rows",
+    "One-hot encoded categorical features",
+    "StandardScaler normalization",
+    "80/20 stratified train/test split"
+  ],
+  "class_balance": {
+    "no_fire_pct": 89.9,
+    "fire_pct": 10.1
+  }
+}

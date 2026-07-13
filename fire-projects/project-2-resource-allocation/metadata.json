@@ -1,0 +1,32 @@
+{
+  "project": "Fire Resource Allocation Optimisation",
+  "data_source": "ABARES Forest Fire Data 2016-2021 (via Project 1 output)",
+  "created_date": "2026-07-13 12:11:27.839909",
+  "model": "GradientBoostingRegressor per-region fire count forecast",
+  "ml_task": "Regression \u2014 forecast fire incident counts by state/tenure group",
+  "resource_costs": {
+    "appliance_heavy": 2500000,
+    "appliance_light": 800000,
+    "crew_member": 120000,
+    "helicopter": 5000000,
+    "bulldozer": 350000,
+    "aerial_tanker": 8000000
+  },
+  "resource_rates": {
+    "appliance_heavy": 0.3,
+    "appliance_light": 0.8,
+    "crew_member": 4.0,
+    "helicopter": 0.05
+  },
+  "features": [
+    "State indicators (8 states/territories)",
+    "Tenure type indicators (6 types)",
+    "Prior burn count (0-5 historical years)",
+    "Pixel count (area weight)"
+  ],
+  "outputs": [
+    "models/demand_forecast_model.pkl \u2014 trained regressor",
+    "data/state_tenure_aggregated.csv \u2014 aggregated fire rates",
+    "outputs/resource_allocation_plan.json \u2014 planned allocation by state"
+  ]
+}

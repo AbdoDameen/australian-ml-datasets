@@ -1,0 +1,9 @@
+# ML models and generated data — re-run pipeline to reproduce
+processed/
+features/
+models/
+outputs/
+__pycache__/
+*.pyc
+*.npy
+*.pkl
