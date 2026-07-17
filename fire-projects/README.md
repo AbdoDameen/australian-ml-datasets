@@ -62,19 +62,23 @@ pip install sentinelhub oauthlib
 
 ## Usage
 
-Each project is self-contained. Pipeline scripts generate all outputs (cleaned data, models, visualisations) from raw ABARES data.
+Each project is self-contained. You can run either the standalone scripts or the Jupyter notebooks:
 
 ```bash
-# Run all projects in order
-cd project-1-risk-prediction && python3 prepare_pipeline.py
-cd ../project-2-resource-allocation && python3 resource_optimisation.py
-cd ../project-3-burn-scar-mapping && python3 burn_scar_mapping.py
-cd ../project-4-dashboard && streamlit run dashboard.py
+# Option A — Standalone runners (generates PNG charts to outputs/charts/)
+cd project-1-risk-prediction && python3 p1_run.py
+cd ../project-2-resource-allocation && python3 p2_run.py
+cd ../project-3-burn-scar-mapping && python3 p3_run.py
+cd ../project-4-dashboard && python3 p4_run.py
 ```
 
-## Google Colab Quick Start
-
-Each project folder has a markdown file with a "Run in Colab" badge — click to open and run in your browser without installing anything.
+```bash
+# Option B — Jupyter notebooks (interactive exploration)
+cd project-1-risk-prediction && jupyter notebook forest_fire_risk_prediction.ipynb
+cd ../project-2-resource-allocation && jupyter notebook fire_resource_allocation.ipynb
+cd ../project-3-burn-scar-mapping && jupyter notebook satellite_burn_scar_mapping.ipynb
+cd ../project-4-dashboard && jupyter notebook bushfire_analytics_dashboard.ipynb
+```
 
 ---
 
