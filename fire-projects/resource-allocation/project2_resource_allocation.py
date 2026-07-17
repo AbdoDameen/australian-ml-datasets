@@ -47,7 +47,7 @@ def _():
 
 @app.cell
 def _(Path, pd):
-    csv = Path("../project-1-risk-prediction/processed/forest_fire_risk_clean.csv")
+    csv = Path("../risk-prediction/processed/forest_fire_risk_clean.csv")
     if not csv.exists():
         csv = Path("../../daily-datasets/climate/bushfire-history/raw/Fire_For16-21_Attributes.csv")
         raw = pd.read_csv(csv)

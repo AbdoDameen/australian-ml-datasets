@@ -16,7 +16,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 # ── Load ──────────────────────────────────────────────────────────────
 # Try Project 1 output first, fall back to raw ABARES
-csv = Path("../project-1-risk-prediction/processed/forest_fire_risk_clean.csv")
+csv = Path("../risk-prediction/processed/forest_fire_risk_clean.csv")
 unc = 0
 if csv.exists():
     df = pd.read_csv(csv); print(f"Loaded Project 1 output: {len(df):,} rows")

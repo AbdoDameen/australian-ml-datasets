@@ -8,37 +8,37 @@ A collection of 4 data science projects built for Australian fire service applic
 
 ## Projects
 
-### 1. 🔮 Forest Fire Risk Prediction
+### 🔮 Forest Fire Risk Prediction
 **ML Classification** — Predicts unplanned forest fires using tenure type, forest category, and prior fire history.
 
 - **Data:** ABARES Forest Fire 2016–2021 (38455 pixel regions across all states)
 - **Model:** Random Forest (200 estimators, balanced class weights)
 - **Performance:** 0.93 ROC-AUC, 98% recall on fire detection
 - **Outputs:** Trained model, SHAP-compatible features, ML-ready train/test splits
-- `cd project-1-risk-prediction && python3 prepare_pipeline.py`
+- `cd risk-prediction && python3 prepare_pipeline.py`
 
-### 2. 📊 Resource Allocation Optimisation
+### 📊 Resource Allocation Optimisation
 **Demand Forecasting + Budget Planning** — Forecasts seasonal fire incident counts and allocates resources (appliances, crews, helicopters) with cost estimates.
 
 - **Approach:** Gradient Boosting regression on aggregated state-tenure groups
 - **Outputs:** Per-state resource allocation plan with sensitivity analysis (20% uplift scenario)
 - **Use case:** Fire service procurement and operational budgeting
-- `cd project-2-resource-allocation && python3 resource_optimisation.py`
+- `cd resource-allocation && python3 resource_optimisation.py`
 
-### 3. 🛰️ Satellite Burn Scar Mapping
+### 🛰️ Satellite Burn Scar Mapping
 **Computer Vision / Remote Sensing** — Detects bushfire burn scars via Sentinel-2 satellite NDVI change detection.
 
 - **Method:** Pre-fire vs post-fire NDVI comparison (NIR - Red / NIR + Red)
 - **Demo:** Synthetic scene generator for offline experimentation
 - **Real data:** Includes `download_sentinel2.py` script for Copernicus Data Space API
-- `cd project-3-burn-scar-mapping && python3 burn_scar_mapping.py`
+- `cd burn-scar-mapping && python3 burn_scar_mapping.py`
 
-### 4. 📈 Interactive Bushfire Dashboard
+### 📈 Interactive Bushfire Dashboard
 **Streamlit Dashboard** — Ties all projects together with interactive visualisations.
 
 - Pages: Overview, Risk Explorer, Resource Planner, Burn Scar Viewer
 - Uses Plotly for interactive charts (heatmaps, bar charts, maps)
-- `cd project-4-dashboard && streamlit run dashboard.py`
+- `cd dashboard && streamlit run dashboard.py`
 
 ---
 
@@ -66,18 +66,18 @@ Each project is self-contained. You can run either the standalone scripts or the
 
 ```bash
 # Option A — Standalone runners (generates PNG charts to outputs/charts/)
-cd project-1-risk-prediction && python3 p1_run.py
-cd ../project-2-resource-allocation && python3 p2_run.py
-cd ../project-3-burn-scar-mapping && python3 p3_run.py
-cd ../project-4-dashboard && python3 p4_run.py
+cd risk-prediction && python3 p1_run.py
+cd ../resource-allocation && python3 p2_run.py
+cd ../burn-scar-mapping && python3 p3_run.py
+cd ../dashboard && python3 p4_run.py
 ```
 
 ```bash
 # Option B — Jupyter notebooks (interactive exploration)
-cd project-1-risk-prediction && jupyter notebook forest_fire_risk_prediction.ipynb
-cd ../project-2-resource-allocation && jupyter notebook fire_resource_allocation.ipynb
-cd ../project-3-burn-scar-mapping && jupyter notebook satellite_burn_scar_mapping.ipynb
-cd ../project-4-dashboard && jupyter notebook bushfire_analytics_dashboard.ipynb
+cd risk-prediction && jupyter notebook forest_fire_risk_prediction.ipynb
+cd ../resource-allocation && jupyter notebook fire_resource_allocation.ipynb
+cd ../burn-scar-mapping && jupyter notebook satellite_burn_scar_mapping.ipynb
+cd ../dashboard && jupyter notebook bushfire_analytics_dashboard.ipynb
 ```
 
 ---

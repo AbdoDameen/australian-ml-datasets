@@ -18,7 +18,7 @@ base = Path("..")
 loaded = []
 
 # P1
-p1_csv = base / "project-1-risk-prediction" / "processed" / "forest_fire_risk_clean.csv"
+p1_csv = base / "risk-prediction" / "processed" / "forest_fire_risk_clean.csv"
 if p1_csv.exists():
     df1 = pd.read_csv(p1_csv)
     state_cols = [c for c in df1.columns if c.startswith('state_')]
@@ -30,7 +30,7 @@ else:
     loaded.append("P1: not found (run p1_run.py first)")
 
 # P2
-p2_json = base / "project-2-resource-allocation" / "outputs" / "resource_allocation_plan.json"
+p2_json = base / "resource-allocation" / "outputs" / "resource_allocation_plan.json"
 if p2_json.exists():
     with open(p2_json) as f: plan = json.load(f)
     df2 = pd.DataFrame(plan['allocation'])
@@ -40,8 +40,8 @@ else:
     loaded.append("P2: not found")
 
 # P3
-p3_mask = base / "project-3-burn-scar-mapping" / "outputs" / "burn_mask.npy"
-p3_diff = base / "project-3-burn-scar-mapping" / "outputs" / "ndvi_diff.npy"
+p3_mask = base / "burn-scar-mapping" / "outputs" / "burn_mask.npy"
+p3_diff = base / "burn-scar-mapping" / "outputs" / "ndvi_diff.npy"
 if p3_mask.exists() and p3_diff.exists():
     burn_mask = np.load(p3_mask)
     ndvi_diff = np.load(p3_diff)
