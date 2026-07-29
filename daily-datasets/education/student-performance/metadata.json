@@ -1,7 +1,7 @@
 {
   "dataset_name": "student-performance",
   "domain": "education",
-  "created_date": "2026-07-29 12:47:47.569715",
+  "created_date": "2026-07-29 12:49:34.027601",
   "source": "UCI Machine Learning Repository \u2014 Student Performance",
   "source_url": "https://archive.ics.uci.edu/dataset/320/student+performance",
   "license": "CC BY 4.0",

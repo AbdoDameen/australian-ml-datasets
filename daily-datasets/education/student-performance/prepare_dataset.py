@@ -64,13 +64,26 @@ COL_DESCRIPTIONS = {
 
 
 def load_data():
-    """Load both subjects, add subject column, combine."""
+    """Extract zip if needed, load both subjects, add subject column, combine."""
+    zip_path = RAW / ".student.zip_old"
+    csv_math = RAW / "student-mat.csv"
+    csv_por = RAW / "student-por.csv"
+
+    # Extract CSVs from zip if they don't exist yet
+    if not csv_math.exists() or not csv_por.exists():
+        import zipfile
+        print("Extracting CSVs from .student.zip_old...")
+        with zipfile.ZipFile(zip_path, "r") as z:
+            z.extractall(RAW)
+        # Remove the extra student.txt that comes in the zip
+        (RAW / "student.txt").unlink(missing_ok=True)
+
     print(f"Loading student-mat.csv...")
-    math = pd.read_csv(RAW / "student-mat.csv", sep=";")
+    math = pd.read_csv(csv_math, sep=";")
     math["subject"] = "Math"
 
     print(f"Loading student-por.csv...")
-    por = pd.read_csv(RAW / "student-por.csv", sep=";")
+    por = pd.read_csv(csv_por, sep=";")
     por["subject"] = "Portuguese"
 
     df = pd.concat([math, por], ignore_index=True)
