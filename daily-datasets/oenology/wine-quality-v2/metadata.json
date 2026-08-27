@@ -1,0 +1,41 @@
+{
+  "dataset_name": "wine-quality-v2",
+  "dataset_number": 52,
+  "domain": "oenology",
+  "ml_task": "Regression (quality score 0-10)",
+  "source": "UCI ML Repository \u2014 Wine Quality",
+  "source_url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+  "citation": "Cortez et al., 2009. Modeling wine preferences by data mining from physicochemical properties. Decision Support Systems, 47(4):547-553.",
+  "description": "Physicochemical properties of Portuguese Vinho Verde wines (red + white). Predict the sensory quality score (median of expert ratings, 0-10).",
+  "processing_date": "2026-08-27",
+  "total_rows": 6497,
+  "red_rows": 1599,
+  "white_rows": 4898,
+  "features_original": 11,
+  "features_engineered": 8,
+  "features_after_encoding": 19,
+  "target": "quality (0-10, regression)",
+  "quality_distribution": {
+    "3": 30,
+    "4": 206,
+    "5": 1752,
+    "6": 2323,
+    "7": 856,
+    "8": 148,
+    "9": 5
+  },
+  "duplicates_removed": 1177,
+  "missing_values_after": 0,
+  "transformations": [
+    "Combined red + white CSVs with wine_type flag",
+    "Standardized column names (lowercase, underscores)",
+    "Removed duplicate rows",
+    "Capped outliers at 1.5x IQR on physicochemical features",
+    "Feature engineering: total_acidity, fixed_to_volatile, so2_ratio, sweetness bands,",
+    "  alcohol bands, sugar_per_density, chlorides_per_alcohol, quality_label",
+    "One-hot encoded: wine_type, sweetness, alcohol_band",
+    "80/20 train/test split (random_state=42)",
+    "StandardScaler (fit on train, transform test)"
+  ],
+  "licensing": "Public domain for research (Cortez et al., 2009)"
+}
